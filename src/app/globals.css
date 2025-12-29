@@ -6,17 +6,19 @@
 
 .main{
   height: 100vh;
+  background-color: rgb(170, 116, 116);
 }
 
 .header{
   position: sticky;
   top: 0;
-
-  background-color: lightgreen;
   height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
 }
 
 .footer{
-  background-color: lightcoral;
+  background-color: rgb(119, 69, 69);
   height: 15vh;
 }

@@ -1,6 +1,6 @@
 import "./globals.css";
-import Footer from "./(pages)/footer/page";
-import Header from "./(pages)/header/page";
+import Footer from "../components/layout/footer/page";
+import Header from "../components/layout/header/page";
 
 export default ({ children }: { children: React.ReactNode }) => {
 
@@ -9,7 +9,7 @@ export default ({ children }: { children: React.ReactNode }) => {
 
       <body>
 
-      <header className="header">
+      <header>
         <Header />
       </header>
 
@@ -17,7 +17,7 @@ export default ({ children }: { children: React.ReactNode }) => {
         {children}
       </div>
 
-      <footer className="footer">
+      <footer>
         <Footer />
       </footer>
 
