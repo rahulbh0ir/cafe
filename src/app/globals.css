@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  height: 100vh;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+
+  background-color: lightgreen;
+  height: 15vh;
+}
+
+.footer{
+  background-color: lightcoral;
+  height: 15vh;
+}
