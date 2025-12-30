@@ -1,7 +1,7 @@
 export default () => {
   
   return (
-    <div>
+    <div className="menu">
       Menu page
     </div>
   )
