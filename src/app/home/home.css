@@ -1,20 +1,39 @@
-.main {
+/* .main {
   background-color: rgb(170, 116, 116);
+} */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
-.hero {
-  /* display: grid;
-  grid-column: 1;
-  grid-row: 1; */
 
+.hero {
+  position: relative;
   min-height: 100vh;
   text-align: center;
-  padding: 80px 20px;
+  /* padding: 80px 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
+}
+
+.heading{
+  position: absolute;
+  top: 12%;
+}
+
+.info {
+  position: absolute;
+  bottom: 15%;
 }
 
 .title {
@@ -36,6 +55,8 @@
 
 .hero-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -66,9 +87,21 @@
 
 /* ABOUT */
 .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 80px 20px;
   text-align: center;
-  background: #fff;
+  /* background: #fff; */
+}
+
+.rotating-img {
+  width: max-content;
+  object-fit: cover;
+  margin-left: 25%; 
+  animation-name: spin ;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .about h2 {

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import background from "../../public/images/background4.jpg";
+import pizza from "../../public/images/pizza.png";
 import "./home.css";
 
 export default () => {
@@ -11,37 +13,56 @@ export default () => {
 
         <div className="hero">
 
-            {/* <Image
-              alt="background"
-              src={""}
-              style={{  
-                width: "90vw",
-                height: "100vh"
-              }}
-            /> */}
+          <Image
+            className="bg-img"
+            alt="background"
+            src={background}
+            // width={1500}
+            style={{
+              width: "100%",
+              height: "auto",
+              margin: 0,
+            }}
+          />
 
-          <h1 className="title">BEAN THERE</h1>
-          <p className="tagline">Coffee • Food • Moments</p>
+          <div className="heading">
+            <h1 className="title">BEAN THERE</h1>
+            <p className="tagline">Coffee • Food • Moments</p>
+          </div>
 
-          <p className="hero-text">
-            Where every cup feels like home. Freshly brewed coffee, comforting food,
-            and a place to slow down.
-          </p>
+          <div className="info">
+            <p className="hero-text">
+              Where every cup feels like home. Freshly brewed coffee, comforting food,
+              and a place to slow down.
+            </p>
 
-          <div className="hero-buttons">
-            <button className="btn primary">View Menu</button>
-            <button className="btn secondary">Visit Us</button>
+            <div className="hero-buttons">
+              <button className="btn primary">View Menu</button>
+              <button className="btn secondary">Visit Us</button>
+            </div>
           </div>
         </div>
 
+
+
         {/* ABOUT div */}
         <div className="about">
-          <h2>More Than Just a Café</h2>
-          <p>
-            At Bean There, we believe great coffee brings people together.
-            From carefully selected beans to freshly prepared food,
-            everything is made with heart.
-          </p>
+          <div>
+            <h2>More Than Just a Café</h2>
+            <p>
+              At Bean There, we believe great coffee brings people together.
+              From carefully selected beans to freshly prepared food,
+              everything is made with heart.
+            </p>
+          </div>
+          
+          <div className="rotating-img">
+            <Image
+              alt="pizza"
+              src={pizza}
+              width={400}
+            />
+          </div>
         </div>
 
         {/* MENU HIGHLIGHTS */}
