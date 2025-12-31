@@ -1,6 +1,6 @@
 import "./globals.css";
-import Footer from "../components/layout/footer/page";
-import Header from "../components/layout/header/page";
+import Footer from "./footer/page";
+import Header from "./header/page";
 
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default ({ children }: { children: React.ReactNode }) => {
           <Header />
         </header>
 
-        <div className="main">
+        <div className="main-content">
           {children}
         </div>
 

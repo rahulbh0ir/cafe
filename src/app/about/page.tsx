@@ -1,3 +1,5 @@
+import "./about.css";
+
 export default () => {
   
   return (

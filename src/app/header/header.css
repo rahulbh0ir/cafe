@@ -1,0 +1,27 @@
+.header {
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: none;
+  transition: border-bottom 1s ease;
+}
+
+.act-link {
+  color: rgb(172, 61, 61);
+  border-bottom: solid 2.2px rgb(172, 61, 61);
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -1,3 +1,5 @@
+import "./book.css";
+
 export default () => {
   
   return (
