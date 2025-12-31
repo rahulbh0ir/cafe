@@ -6,19 +6,20 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /* background: #f1f1f1;  */
-  background: rgb(233, 233, 233); 
+  background: #f1f1f1; 
+  /* background: rgb(233, 233, 233);  */
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   /* background: #984f4f;  */
   background: #af8888; 
+  /* border-radius: 2px; */
 
 }
 

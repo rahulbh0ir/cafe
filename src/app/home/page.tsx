@@ -47,7 +47,7 @@ export default () => {
 
         {/* ABOUT div */}
         <div className="about">
-          <div>
+          <div className="about-details">
             <h2>More Than Just a Café</h2>
             <p>
               At Bean There, we believe great coffee brings people together.
@@ -64,6 +64,9 @@ export default () => {
             />
           </div>
         </div>
+
+
+
 
         {/* MENU HIGHLIGHTS */}
         <div className="menu-content">

@@ -92,6 +92,7 @@
   padding: 80px 20px;
   text-align: center;
   /* background: #fff; */
+  color: #fff;
 }
 
 .rotating-img {
@@ -99,7 +100,7 @@
   object-fit: cover;
   margin-left: 25%; 
   animation-name: spin ;
-  animation-duration: 120s;
+  animation-duration: 150s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -107,6 +108,12 @@
 .about h2 {
   font-size: 2.2rem;
   margin-bottom: 16px;
+}
+
+.about-details{
+  border: solid 1px black;
+  padding: 15px;
+  height: 100%;
 }
 
 /* MENU */
