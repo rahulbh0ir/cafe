@@ -30,6 +30,7 @@
 }
 
 
+
 .menu {
   height: 100vh;
 }
@@ -47,12 +48,19 @@
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  height: 20vh;
+  height: 18vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  /* background-color: rgb(119, 69, 69); */
+  background-color: rgb(106, 61, 61);
+  height: 35vh;
 }
 
 
@@ -91,7 +99,7 @@
   align-items: center;
 }
 
-.logo {
+.title {
   font-size: 4rem;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -182,13 +190,4 @@
   padding: 80px 20px;
   text-align: center;
   background: #fff;
-}
-
-.footer {
-  padding: 40px 20px;
-  text-align: center;
-  color: white;
-  /* background-color: rgb(119, 69, 69); */
-  background-color: rgb(106, 61, 61);
-  height: 35vh;
 }

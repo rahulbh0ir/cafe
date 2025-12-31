@@ -20,7 +20,7 @@ export default () => {
               }}
             /> */}
 
-          <h1 className="logo">BEAN THERE</h1>
+          <h1 className="title">BEAN THERE</h1>
           <p className="tagline">Coffee • Food • Moments</p>
 
           <p className="hero-text">
