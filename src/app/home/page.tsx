@@ -61,6 +61,7 @@ export default () => {
               alt="pizza"
               src={pizza}
               width={400}
+              style={{width : "100%" , objectFit : "contain"}}
             />
           </div>
         </div>
