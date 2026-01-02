@@ -5,7 +5,7 @@ import Header from "./header/page";
 
 export const metadata = {
   title: "Bean There",
-  description: "Cafe Restaurant"
+  description: "Cafe Restaurant",
 }
 
 
@@ -13,7 +13,6 @@ export default ({ children }: { children: React.ReactNode }) => {
 
   return (
     <html>
-      
       <body>
 
         <header>

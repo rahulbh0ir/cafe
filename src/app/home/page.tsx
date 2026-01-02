@@ -47,6 +47,7 @@ export default () => {
 
         {/* ABOUT div */}
         <div className="about">
+
           <div className="about-details">
             <h2>More Than Just a Café</h2>
             <p>
@@ -61,9 +62,10 @@ export default () => {
               alt="pizza"
               src={pizza}
               width={400}
-              style={{width : "100%" , objectFit : "contain"}}
+              style={{width : "100%" }}
             />
           </div>
+
         </div>
 
 
