@@ -44,52 +44,24 @@ export default () => {
         </section>
 
 
-
-        {/* ABOUT div */}
-        {/* <section className="about">
-
-          <div className="about-details">
-            <h2>More Than Just a Café</h2>
-            <p>
-              At Bean There, we believe great coffee brings people together.
-              From carefully selected beans to freshly prepared food,
-              everything is made with heart.
-            </p>
-          </div>
-          
-          <div className="rotating-img">
-            <Image
-              alt="pizza"
-              src={pizza}
-              width={400}
-              style={{width : "100%" }}
-            />
-          </div>
-
-        </section> */}
+        {/* About Section     */}
 
         <section className="about">
+
           <div className="about-text">
-            <h2>More Than Just a Café</h2>
+            <h2>More Than Just a Café!</h2>
 
-            <p className="about-intro">
-              A place where coffee meets comfort food.
-            </p>
+            <h3>A place where coffee meets comfort food.</h3>
 
             <p className="about-description">
-              At Bean There, we’re more than a stop for great coffee — we’re a space
-              built around thoughtful brewing, comforting food, and shared moments.
-              From handcrafted coffees and refreshing drinks to oven-fresh pizzas
-              and warm bakes, every item on our menu is prepared with care and balance.
+              From freshly brewed coffee to comforting meals, Bean There is a place to slow down and enjoy food made with care. 
+              Our menu brings together bold coffees, refreshing drinks, 
+              and satisfying food — from warm bakes to handcrafted pizzas — all prepared with attention to quality and flavor.
             </p>
-
             <p className="about-description">
-              We believe food should feel just as good as it tastes. That’s why we
-              focus on quality ingredients, simple techniques, and flavors that
-              bring people back. Whether it’s a quiet coffee break or a relaxed meal
-              with friends, Bean There is made to feel familiar, welcoming, and worth
-              returning to.
-            </p>
+             Every visit is about more than what’s on the table. 
+             It’s about creating a space that feels familiar, relaxed, and worth coming back to.
+             </p>
           </div>
 
           <div className="about-visual">

@@ -13,7 +13,6 @@
 }
 
 
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -25,7 +24,7 @@
   color: #fff;
 }
 
-.heading{
+.heading {
   position: absolute;
   top: 12%;
 }
@@ -84,8 +83,14 @@
   opacity: 0.9;
 }
 
+
+
+
+
+
 /* ABOUT */
 .about {
+  /* font-family: 'Inria Serif', Georgia, "Times New Roman", serif; */
   position: relative;
   overflow: hidden;
   display: grid;
@@ -93,7 +98,8 @@
   gap: 4rem;
   padding: 5rem 3rem;
   align-items: center;
-  color: #fff; 
+  color: black;
+  background-color: #fff;
 }
 
 .about::before {
@@ -121,22 +127,43 @@
   justify-content: center;
   width: max-content;
   object-fit: cover;
-  margin-left: 25%; 
-  animation-name: spin ;
+  margin-left: 25%;
+  animation-name: spin;
   animation-duration: 150s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .about h2 {
-  font-size: 2.2rem;
+  /* font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif; */
+  font-family: var(--poiret);
+  font-size: 4rem;
+  font-weight:lighter;
+  letter-spacing: -3px;
+  padding: 3rem 0;
+  margin-top: -5rem;
   margin-bottom: 1rem;
+  color: rgb(113, 86, 86) ;
 }
 
-.about-details{
+.about h3 {
+  font-family: var(--lavish);
+  font-size: xx-large;
+  margin: -3rem 0 2rem 0;
+  color: rgb(152, 96, 96) ;
+}
+
+.about-description {
   padding: 0.938rem;
   height: 100%;
+  color: grey;
 }
+
+
+
+
+
+
 
 /* MENU */
 .menu-content {
@@ -164,6 +191,12 @@
   text-align: center;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.05);
 }
+
+
+
+
+
+
 
 /* FEATURED */
 .featured {
