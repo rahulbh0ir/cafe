@@ -11,7 +11,7 @@ export default () => {
 
       <main className="home">
 
-        <div className="hero">
+        <section className="hero">
 
           <Image
             className="bg-img"
@@ -41,12 +41,12 @@ export default () => {
               <button className="btn secondary">Visit Us</button>
             </div>
           </div>
-        </div>
+        </section>
 
 
 
         {/* ABOUT div */}
-        <div className="about">
+        {/* <section className="about">
 
           <div className="about-details">
             <h2>More Than Just a Café</h2>
@@ -66,13 +66,50 @@ export default () => {
             />
           </div>
 
-        </div>
+        </section> */}
+
+        <section className="about">
+          <div className="about-text">
+            <h2>More Than Just a Café</h2>
+
+            <p className="about-intro">
+              A place where coffee meets comfort food.
+            </p>
+
+            <p className="about-description">
+              At Bean There, we’re more than a stop for great coffee — we’re a space
+              built around thoughtful brewing, comforting food, and shared moments.
+              From handcrafted coffees and refreshing drinks to oven-fresh pizzas
+              and warm bakes, every item on our menu is prepared with care and balance.
+            </p>
+
+            <p className="about-description">
+              We believe food should feel just as good as it tastes. That’s why we
+              focus on quality ingredients, simple techniques, and flavors that
+              bring people back. Whether it’s a quiet coffee break or a relaxed meal
+              with friends, Bean There is made to feel familiar, welcoming, and worth
+              returning to.
+            </p>
+          </div>
+
+          <div className="about-visual">
+            <div className="rotating-img">
+              <Image
+                alt="pizza"
+                src={pizza}
+                width={400}
+                style={{ width: "100%" }}
+              />
+            </div>
+          </div>
+        </section>
+
 
 
 
 
         {/* MENU HIGHLIGHTS */}
-        <div className="menu-content">
+        <section className="menu-content">
           <h2>Menu Highlights</h2>
 
           <div className="menu-grid">
@@ -96,15 +133,15 @@ export default () => {
               <p>Refreshing beverages for every mood.</p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="featured">
+        <section className="featured">
           <h2>Today’s Special</h2>
           <p>
             Classic Cappuccino paired with our signature garlic bread —
             the perfect comfort combo.
           </p>
-        </div>
+        </section>
 
 
       </main>
