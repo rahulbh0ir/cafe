@@ -2,6 +2,7 @@ import Image from "next/image";
 import background from "../../public/images/background4.jpg";
 import pizza from "../../public/images/pizza.png";
 import "./home.css";
+import Strong from "../../components/strong"
 
 export default () => {
 
@@ -54,7 +55,7 @@ export default () => {
             <h3>A place where coffee meets comfort food.</h3>
 
             <p className="about-description">
-              From freshly brewed coffee to comforting meals, Bean There is a place to slow down and enjoy food made with care. 
+              From freshly brewed coffee to comforting meals, <Strong>Bean There</Strong> is a place to slow down and enjoy food made with care. 
               Our menu brings together bold coffees, refreshing drinks, 
               and satisfying food — from warm bakes to handcrafted pizzas — all prepared with attention to quality and flavor.
             </p>
