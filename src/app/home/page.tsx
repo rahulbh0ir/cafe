@@ -3,6 +3,11 @@ import background from "../../public/images/background4.jpg";
 import pizza from "../../public/images/pizza.png";
 import "./home.css";
 import Strong from "../../components/strong"
+import cup from "../../public/images/cup-img.png"
+import piz from "../../public/images/pizza-img.png"
+import drink from "../../public/images/drink-img.png"
+import food from "../../public/images/food-img.png"
+
 
 export default () => {
 
@@ -57,12 +62,18 @@ export default () => {
             <p className="about-description">
               From freshly brewed coffee to comforting meals, <Strong>Bean There</Strong> is a place to slow down and enjoy food made with care. 
               Our menu brings together bold coffees, refreshing drinks, 
-              and satisfying food — from warm bakes to handcrafted pizzas — all prepared with attention to quality and flavor.
+              and satisfying food — from warm bakes to handcrafted pizzas — <Strong>all prepared with attention to quality and flavor. </Strong>
             </p>
             <p className="about-description">
+              <Strong>
              Every visit is about more than what’s on the table. 
              It’s about creating a space that feels familiar, relaxed, and worth coming back to.
+              </Strong>
              </p>
+
+             {/* style later */}
+            <button className="btn secondary">Our Story</button>
+
           </div>
 
           <div className="about-visual">
@@ -84,29 +95,75 @@ export default () => {
         {/* MENU HIGHLIGHTS */}
         <section className="menu-content">
           <h2>Menu Highlights</h2>
+          
+          <div className="line"></div>
 
           <div className="menu-grid">
             <div className="menu-item">
+              <Image
+                src={cup}
+                alt="coffee cup"
+                style={{
+                  width: "150px",
+                  height: "auto",
+                  borderRadius: "5px"
+
+                }}
+              />
               <h3>☕ Signature Coffee</h3>
               <p>Rich, aromatic blends brewed to perfection.</p>
             </div>
 
             <div className="menu-item">
+              <Image
+                src={food}
+                alt="coffee cup"
+                style={{
+                  width: "150px",
+                  height: "auto",
+                  borderRadius: "5px"
+
+                }}
+              />
               <h3>🥐 Fresh Bakes</h3>
               <p>Soft, warm, and baked every morning.</p>
             </div>
 
             <div className="menu-item">
+              <Image
+                src={piz}
+                alt="coffee cup"
+                style={{
+                  width: "150px",
+                  height: "auto",
+                  borderRadius: "5px"
+
+                }}
+              />
               <h3>🍕 Artisanal Pizza</h3>
               <p>Hand-stretched dough with premium toppings.</p>
             </div>
 
             <div className="menu-item">
+              <Image
+                src={drink}
+                alt="coffee cup"
+                style={{
+                  width: "150px",
+                  height: "auto",
+                  borderRadius: "5px"
+                }}
+              />
               <h3>🥤 Cool Drinks</h3>
               <p>Refreshing beverages for every mood.</p>
             </div>
           </div>
         </section>
+
+
+
+
+
 
         <section className="featured">
           <h2>Today’s Special</h2>
@@ -115,6 +172,9 @@ export default () => {
             the perfect comfort combo.
           </p>
         </section>
+
+
+
 
 
       </main>

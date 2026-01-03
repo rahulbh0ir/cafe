@@ -138,25 +138,30 @@
   /* font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif; */
   font-family: var(--poiret);
   font-size: 4rem;
-  font-weight:lighter;
+  font-weight: lighter;
   letter-spacing: -3px;
   padding: 3rem 0;
   margin-top: -5rem;
   margin-bottom: 1rem;
-  color: rgb(113, 86, 86) ;
+  color: rgb(113, 86, 86);
 }
 
 .about h3 {
   font-family: var(--lavish);
   font-size: xx-large;
   margin: -3rem 0 2rem 0;
-  color: rgb(152, 96, 96) ;
+  color: rgb(152, 96, 96);
 }
 
 .about-description {
   padding: 0.938rem;
   height: 100%;
   color: grey;
+  margin-bottom: 2rem;
+}
+
+.about-text .btn.secondary {
+  margin-left: 1rem;
 }
 
 
@@ -169,11 +174,27 @@
 .menu-content {
   padding: 5rem 1.25rem;
   background: #f6f0e1;
+  
+}
+
+.line{
+  width: 50%;
+  background-color: #3b2f2f;
+  height: 0.05rem;
+  margin: -2rem 25% 5rem ;
 }
 
 .menu-content h2 {
+  font-family: var(--lavish);
+  font-size: 3rem;
+  font-weight: lighter;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.menu-item h3{
+  margin-top: 1rem;
+  font-family: var(--poiret);
 }
 
 .menu-grid {
@@ -185,6 +206,7 @@
 }
 
 .menu-item {
+  /* width: max-content; */
   background: #fff;
   padding: 1.563rem;
   border-radius: 0.75rem;
