@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import background from "../../public/images/background4.jpg";
 import pizza from "../../public/images/pizza.png";
@@ -7,9 +9,25 @@ import cup from "../../public/images/cup-img.png"
 import piz from "../../public/images/pizza-img.png"
 import drink from "../../public/images/drink-img.png"
 import food from "../../public/images/food-img.png"
+import { useEffect } from "react";
 
 
 export default () => {
+
+  useEffect(() => {
+  const section = document.querySelector(".about-doodle");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        section?.classList.add("visible");
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  if (section) observer.observe(section);
+}, []);
 
   return (
     <div className="main">
@@ -51,6 +69,7 @@ export default () => {
 
 
         {/* About Section     */}
+        <div className="content">
 
         <section className="about">
 
@@ -167,7 +186,7 @@ export default () => {
           </p>
         </section>
 
-
+        </div>
 
 
 
