@@ -194,6 +194,7 @@
 }
 
 .menu-content h2 {
+  color: rgb(113, 86, 86);
   font-family: var(--lavish);
   font-size: 3rem;
   font-weight: lighter;
@@ -209,7 +210,8 @@
 
 .line{
   width: 50%;
-  background-color: #3b2f2f;
+  background-color: rgb(113, 86, 86);
+  /* background-color: #3b2f2f; */
   height: 0.05rem;
   margin: -2rem 25% 5rem ;
 }
