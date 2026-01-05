@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.hero-img {
+.story-img {
   object-fit: cover;
   filter: brightness(0.7);
 }
@@ -26,12 +26,12 @@
   text-align: center;
 }
 
-.hero-text h1 {
+.story-text h1 {
   font-size: 4rem;
   letter-spacing: 0.15rem;
 }
 
-.hero-text p {
+.story-text p {
   font-size: 1.2rem;
   margin-top: 1rem;
 }

@@ -36,7 +36,7 @@ export default () => {
           alt="Our Story"
           fill
           priority
-          className="hero-img"
+          className="story-img"
         />
         <div className="story-text">
           <h1>Our Story</h1>
