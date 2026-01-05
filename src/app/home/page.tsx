@@ -60,18 +60,18 @@ export default () => {
             <h3>A place where coffee meets comfort food.</h3>
 
             <p className="about-description">
-              From freshly brewed coffee to comforting meals, <Strong>Bean There</Strong> is a place to slow down and enjoy food made with care. 
-              Our menu brings together bold coffees, refreshing drinks, 
+              From freshly brewed coffee to comforting meals, <Strong>Bean There</Strong> is a place to slow down and enjoy food made with care.
+              Our menu brings together bold coffees, refreshing drinks,
               and satisfying food — from warm bakes to handcrafted pizzas — <Strong>all prepared with attention to quality and flavor. </Strong>
             </p>
             <p className="about-description">
               <Strong>
-             Every visit is about more than what’s on the table. 
-             It’s about creating a space that feels familiar, relaxed, and worth coming back to.
+                Every visit is about more than what’s on the table.
+                It’s about creating a space that feels familiar, relaxed, and worth coming back to.
               </Strong>
-             </p>
+            </p>
 
-             {/* style later */}
+            {/* style later */}
             <button className="btn secondary">Our Story</button>
 
           </div>
@@ -95,7 +95,7 @@ export default () => {
         {/* MENU HIGHLIGHTS */}
         <section className="menu-content">
           <h2>Menu Highlights</h2>
-          
+
           <div className="line"></div>
 
           <div className="menu-grid">
@@ -103,59 +103,53 @@ export default () => {
               <Image
                 src={cup}
                 alt="coffee cup"
-                style={{
-                  width: "150px",
-                  height: "auto",
-                  borderRadius: "5px"
-
-                }}
+                className="menu-image"
               />
-              <h3>☕ Signature Coffee</h3>
-              <p>Rich, aromatic blends brewed to perfection.</p>
+
+              <div className="item-details">
+                <h3>Signature Coffee</h3>
+                <p>Rich, aromatic blends brewed to perfection.</p>
+              </div>
+
             </div>
 
             <div className="menu-item">
               <Image
                 src={food}
                 alt="coffee cup"
-                style={{
-                  width: "150px",
-                  height: "auto",
-                  borderRadius: "5px"
-
-                }}
+                className="menu-image"
               />
-              <h3>🥐 Fresh Bakes</h3>
-              <p>Soft, warm, and baked every morning.</p>
+              <div className="item-details">
+
+                <h3>Fresh Bakes</h3>
+                <p>Soft, warm, and baked every morning.</p>
+              </div>
             </div>
 
             <div className="menu-item">
               <Image
                 src={piz}
                 alt="coffee cup"
-                style={{
-                  width: "150px",
-                  height: "auto",
-                  borderRadius: "5px"
-
-                }}
+                className="menu-image"
               />
-              <h3>🍕 Artisanal Pizza</h3>
-              <p>Hand-stretched dough with premium toppings.</p>
+              <div className="item-details">
+
+                <h3>Artisanal Pizza</h3>
+                <p>Hand-stretched dough with premium toppings.</p>
+              </div>
             </div>
 
             <div className="menu-item">
               <Image
                 src={drink}
                 alt="coffee cup"
-                style={{
-                  width: "150px",
-                  height: "auto",
-                  borderRadius: "5px"
-                }}
+                className="menu-image"
               />
-              <h3>🥤 Cool Drinks</h3>
-              <p>Refreshing beverages for every mood.</p>
+              <div className="item-details">
+
+                <h3>Cool Drinks</h3>
+                <p>Refreshing beverages for every mood.</p>
+              </div>
             </div>
           </div>
         </section>
