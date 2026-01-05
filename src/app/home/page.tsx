@@ -1,4 +1,3 @@
-"use client"
 
 import Image from "next/image";
 import background from "../../public/images/background4.jpg";
@@ -9,30 +8,11 @@ import cup from "../../public/images/cup-img.png"
 import piz from "../../public/images/pizza-img.png"
 import drink from "../../public/images/drink-img.png"
 import food from "../../public/images/food-img.png"
-import { useEffect } from "react";
-
 
 export default () => {
 
-  useEffect(() => {
-  const section = document.querySelector(".about-doodle");
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        section?.classList.add("visible");
-      }
-    },
-    { threshold: 0.3 }
-  );
-
-  if (section) observer.observe(section);
-}, []);
-
   return (
     <div className="main">
-
-
       <main className="home">
 
         <section className="hero">
@@ -41,7 +21,6 @@ export default () => {
             className="bg-img"
             alt="background"
             src={background}
-            // width={1500}
             style={{
               width: "100%",
               height: "auto",
@@ -56,8 +35,7 @@ export default () => {
 
           <div className="info">
             <p className="hero-text">
-              Where every cup feels like home. Freshly brewed coffee, comforting food,
-              and a place to slow down.
+              Where every cup feels like home. Freshly brewed coffee, comforting food, and a place to slow down.
             </p>
 
             <div className="hero-buttons">

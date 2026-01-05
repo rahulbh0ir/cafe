@@ -34,21 +34,28 @@
   bottom: 15%;
 }
 
+.hero-text {
+  /* max-width: 37.5rem; */
+  color: #3b2f2f;
+  text-align: center;
+  width: max-content;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
 .title {
+  color: #3b2f2f;
+  font-family: var(--poiret);
   font-size: 4rem;
   letter-spacing: 0.125rem;
   margin-bottom: 0.625rem;
 }
 
 .tagline {
-  font-size: 1.2rem;
+  color: #3b2f2f;
+  font-family: var(--poiret);
+  font-size: 2rem;
   margin-bottom: 1.25rem;
-}
-
-.hero-text {
-  max-width: 37.5rem;
-  font-size: 1.1rem;
-  margin-bottom: 1.875rem;
 }
 
 .hero-buttons {
