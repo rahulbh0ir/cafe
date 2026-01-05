@@ -8,6 +8,7 @@ import cup from "../../public/images/cup-img.png"
 import piz from "../../public/images/pizza-img.png"
 import drink from "../../public/images/drink-img.png"
 import food from "../../public/images/food-img.png"
+import Link from "next/link";
 
 export default () => {
 
@@ -69,7 +70,9 @@ export default () => {
             </p>
 
             {/* style later */}
+            <Link href={"/story"}  >
             <button className="btn secondary">Our Story</button>
+            </Link>
 
           </div>
 
