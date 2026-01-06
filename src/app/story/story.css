@@ -3,6 +3,10 @@
   color: #2f2a26;
 }
 
+
+
+
+
 /* HERO */
 .story-hero {
   position: relative;
@@ -38,6 +42,10 @@
   margin-top: 1rem;
   text-shadow: 4px 4px 5px rgb(60, 59, 59);
 }
+
+
+
+
 
 /* STORY SECTIONS */
 .story-section {
@@ -80,6 +88,10 @@
 .story-section.visible .story-image img {
   transform: scale(1);
 }
+
+
+
+
 
 /* TEXT */
 .story-content h2 {
