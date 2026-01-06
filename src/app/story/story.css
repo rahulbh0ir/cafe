@@ -48,6 +48,12 @@
 
 
 /* STORY SECTIONS */
+
+.story-section {
+  will-change: opacity, transform;
+}
+
+
 .story-section {
   display: grid;
   grid-template-columns: 1fr 1fr;

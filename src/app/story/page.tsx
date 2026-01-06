@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Animation from "./Animation";
+import Animation from "./animation";
 import "./story.css";
 import MainImg from "../../public/images/story-main.jpg";
 import S1 from "../../public/images/story-1.jpg";
