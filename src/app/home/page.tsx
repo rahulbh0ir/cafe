@@ -1,177 +1,126 @@
-
 import Image from "next/image";
-import background from "../../public/images/background4.jpg";
-import pizza from "../../public/images/pizza.png";
+import Animation from "./animations";
 import "./home.css";
-import Strong from "../../components/strong"
-import cup from "../../public/images/cup-img.png"
-import piz from "../../public/images/pizza-img.png"
-import drink from "../../public/images/drink-img.png"
-import food from "../../public/images/food-img.png"
-import Link from "next/link";
+import BgImg from "../../public/images/background2.jpg";
+import RotatePizza from "../../public/images/pizza.png";
+import Interior from "../../public/images/home.jpg";
+import food from "../../public/images/mainFood2.jpg";
+import coffee from "../../public/images/homeCoffee.jpg";
+import pizza from "../../public/images/mainPizza2.jpg";
 
-export default () => {
-
+export default function HomePage() {
   return (
-    <div className="main">
-      <main className="home">
+    <main className="home-page">
+      <Animation />
 
-        <section className="hero">
-
-          <Image
-            className="bg-img"
-            alt="background"
-            src={background}
-            style={{
-              width: "100%",
-              height: "auto",
-              margin: 0,
-            }}
-          />
-
-          <div className="heading">
-            <h1 className="title">BEAN THERE</h1>
-            <p className="tagline">Coffee • Food • Moments</p>
-          </div>
-
-          <div className="info">
-            <p className="hero-text">
-              Where every cup feels like home. Freshly brewed coffee, comforting food, and a place to slow down.
-            </p>
-
-            <div className="hero-buttons">
-              <button className="btn primary">View Menu</button>
-              <button className="btn secondary">Visit Us</button>
-            </div>
-          </div>
-        </section>
-
-
-        {/* About Section     */}
-        <div className="content">
-
-        <section className="about">
-
-          <div className="about-text">
-            <h2>More Than Just a Café!</h2>
-
-            <h3>A place where coffee meets comfort food.</h3>
-
-            <p className="about-description">
-              From freshly brewed coffee to comforting meals, <Strong>Bean There</Strong> is a place to slow down and enjoy food made with care.
-              Our menu brings together bold coffees, refreshing drinks,
-              and satisfying food — from warm bakes to handcrafted pizzas — <Strong>all prepared with attention to quality and flavor. </Strong>
-            </p>
-            <p className="about-description">
-              <Strong>
-                Every visit is about more than what’s on the table.
-                It’s about creating a space that feels familiar, relaxed, and worth coming back to.
-              </Strong>
-            </p>
-
-            {/* style later */}
-            <Link href={"/story"}  >
-            <button className="btn secondary">Our Story</button>
-            </Link>
-
-          </div>
-
-          <div className="about-visual">
-            <div className="rotating-img">
-              <Image
-                alt="pizza"
-                src={pizza}
-                width={400}
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-        </section>
+      {/* SECTION 1 — HERO IMAGE */}
+      <section className="home-hero">
+        <Image
+          src= {BgImg}
+          alt="Bean There Café"
+          fill
+          priority
+          className="hero-img"
+        />
+      </section>
 
 
 
-
-
-        {/* MENU HIGHLIGHTS */}
-        <section className="home-content">
-          <h2>Menu Highlights</h2>
-
-          <div className="line"></div>
-
-          <div className="home-grid">
-            <div className="home-item">
-              <Image
-                src={cup}
-                alt="coffee cup"
-                className="home-image"
-              />
-
-              <div className="item-details">
-                <h3>Signature Coffee</h3>
-                <p>Rich, aromatic blends brewed to perfection.</p>
-              </div>
-
-            </div>
-
-            <div className="home-item">
-              <Image
-                src={food}
-                alt="coffee cup"
-                className="home-image"
-              />
-              <div className="item-details">
-
-                <h3>Fresh Bakes</h3>
-                <p>Soft, warm, and baked every morning.</p>
-              </div>
-            </div>
-
-            <div className="home-item">
-              <Image
-                src={piz}
-                alt="coffee cup"
-                className="home-image"
-              />
-              <div className="item-details">
-
-                <h3>Artisanal Pizza</h3>
-                <p>Hand-stretched dough with premium toppings.</p>
-              </div>
-            </div>
-
-            <div className="home-item">
-              <Image
-                src={drink}
-                alt="coffee cup"
-                className="home-image"
-              />
-              <div className="item-details">
-
-                <h3>Cool Drinks</h3>
-                <p>Refreshing beverages for every mood.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* SECTION 2 — INTRO */}
+      <section className="home-intro reveal">
+        <h1>Bean There</h1>
+        <p>
+          More than a café — a place to slow down, sip thoughtfully,
+          and enjoy food made with care.
+        </p>
+      </section>
 
 
 
-
-
-
-        <section className="featured">
-          <h2>Today’s Special</h2>
+      {/* SECTION 3 — ABOUT PREVIEW */}
+      <section className="home-about reveal">
+        <div className="home-about-text">
+          <h2>More Than Just Coffee</h2>
           <p>
-            Classic Cappuccino paired with our signature garlic bread —
-            the perfect comfort combo.
+            At Bean There, we serve more than drinks. From handcrafted coffee
+            to comforting food and fresh pizzas, everything we make is guided
+            by care, quality, and connection.
           </p>
-        </section>
-
+          <span className="home-link">Read our story →</span>
         </div>
 
+        <div className="home-about-image">
+          <Image
+            src={RotatePizza}
+            alt="Fresh pizza"
+            width={420}
+            height={420}
+            className="rotate-slow"
+          />
+        </div>
+      </section>
 
 
-      </main>
-    </div>
-  )
+
+
+      {/* SECTION 4 — MENU PREVIEW */}
+      <section className="home-menu reveal">
+        <div className="home-menu-card">
+          <Image src={coffee} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Coffee</h4>
+            <p>Carefully brewed, always comforting.</p>
+          </div>
+        </div>
+
+        <div className="home-menu-card">
+          <Image src={food} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Food</h4>
+            <p>Fresh, simple, and made to be shared.</p>
+          </div>
+        </div>
+
+        <div className="home-menu-card">
+          <Image src={pizza} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Pizza</h4>
+            <p>Handcrafted dough, honest ingredients.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      {/* SECTION 5 — ATMOSPHERE */}
+      <section className="home-atmosphere reveal">
+        <Image
+          src={Interior}
+          alt=""
+          fill
+          className="atmosphere-img"
+        />
+        <p>
+          Come for the coffee. <br />
+          Stay for the moments.
+        </p>
+      </section>
+
+
+
+
+      {/* SECTION 6 — VISIT */}
+      <section className="home-visit reveal">
+        <h2>Visit Bean There</h2>
+        <p>
+          Good coffee, warm food, and a place that feels like home.
+        </p>
+      </section>
+
+
+
+    </main>
+  );
 }
