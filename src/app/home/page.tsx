@@ -93,17 +93,17 @@ export default () => {
 
 
         {/* MENU HIGHLIGHTS */}
-        <section className="menu-content">
+        <section className="home-content">
           <h2>Menu Highlights</h2>
 
           <div className="line"></div>
 
-          <div className="menu-grid">
-            <div className="menu-item">
+          <div className="home-grid">
+            <div className="home-item">
               <Image
                 src={cup}
                 alt="coffee cup"
-                className="menu-image"
+                className="home-image"
               />
 
               <div className="item-details">
@@ -113,11 +113,11 @@ export default () => {
 
             </div>
 
-            <div className="menu-item">
+            <div className="home-item">
               <Image
                 src={food}
                 alt="coffee cup"
-                className="menu-image"
+                className="home-image"
               />
               <div className="item-details">
 
@@ -126,11 +126,11 @@ export default () => {
               </div>
             </div>
 
-            <div className="menu-item">
+            <div className="home-item">
               <Image
                 src={piz}
                 alt="coffee cup"
-                className="menu-image"
+                className="home-image"
               />
               <div className="item-details">
 
@@ -139,11 +139,11 @@ export default () => {
               </div>
             </div>
 
-            <div className="menu-item">
+            <div className="home-item">
               <Image
                 src={drink}
                 alt="coffee cup"
-                className="menu-image"
+                className="home-image"
               />
               <div className="item-details">
 
