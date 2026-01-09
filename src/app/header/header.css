@@ -17,6 +17,10 @@
   transition: border-bottom 1s ease;
 }
 
+.link:hover {
+  color: rgb(172, 61, 61);
+}
+
 .act-link {
   word-spacing: -3px;
   color: rgb(172, 61, 61);

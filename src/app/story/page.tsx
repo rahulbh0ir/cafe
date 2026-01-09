@@ -42,6 +42,11 @@ export default () => {
               could slow down, connect, and enjoy honest food and coffee made with
               care. What began as a single table idea soon became a shared vision.
             </p>
+            <p>
+              We wanted to build more than just a spot to grab a drink. 
+              From the very beginning, our goal was to create an environment where conversations flow easily, mornings feel gentler, and 
+              every visit feels familiar — no matter how many times you’ve been here.
+            </p>
           </div>
         </section>
 
@@ -57,6 +62,11 @@ export default () => {
               We believe ingredients matter, time matters, and the people we serve
               matter the most.
             </p>
+            <p>
+              We focus on honest ingredients and familiar flavors — food that feels satisfying without being complicated. 
+              Whether you’re stopping by for a quick bite or settling in for a longer visit, 
+              our food is meant to make you feel relaxed and at ease.
+            </p>
           </div>
         </section>
 
@@ -68,9 +78,13 @@ export default () => {
           <div className="story-content">
             <h2>More Than a Café</h2>
             <p>
-              Bean There is a space for conversations, creativity, and comfort.
-              Whether you come for coffee, food, or a quiet moment, you’re always
-              welcome at our table.
+             Bean There is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and 
+             soft lighting create a space where time seems to slow down.
+            </p>
+            <p>
+            More than anything, our café is about people. Friends catching up, quiet solo moments, 
+            shared laughter — these are the moments that shape our space. 
+            We’re proud to be a part of your daily routines and special memories.
             </p>
           </div>
         </section>

@@ -11,6 +11,11 @@ html {
     /* font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif; */
 }
 
+body{
+  background-color: #f7efe7;
+
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
