@@ -34,6 +34,7 @@
 }
 
 
+
 /* FORM CARD */
 .form-wrapper {
   position: relative;
@@ -42,12 +43,14 @@
   margin: auto;
   background: #ffffff;
   padding: 4rem;
-  border-radius: 24px;
+  /* border-radius: 24px; */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .form-wrapper h2 {
-  font-size: 2.2rem;
+  text-align: center;
+  font-family: var(--lavish);
+  font-size: 2.6rem;
   margin-bottom: 0.5rem;
 }
 
@@ -84,7 +87,7 @@
   border-radius: 12px;
   border: 1px solid #ddd;
   font-size: 1rem;
-  background: #fafafa;
+  /* background: #fafafa; */
 }
 
 .form-field input:focus {
@@ -95,11 +98,12 @@
 
 /* BUTTON */
 .submit-btn {
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 1rem;
-  border-radius: 30px;
-  border: none;
-  background: #2f2a26;
+  margin-left: 30%;
+  border: 1px solid black;
+  background: #af8888; 
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -109,4 +113,5 @@
 .submit-btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
+  background: #984f4f; 
 }

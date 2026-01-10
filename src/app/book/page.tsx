@@ -1,6 +1,13 @@
 import "./book.css";
 
 export default function BookTablePage() {
+
+
+  const handleSubmit = () => {
+
+  }
+
+
   return (
     <main className="book-page">
       {/* HERO */}
@@ -53,7 +60,7 @@ export default function BookTablePage() {
             </div>
 
             <button type="submit" className="submit-btn">
-              Reserve Table
+              Book
             </button>
           </form>
         </div>
