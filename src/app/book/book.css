@@ -1,4 +1,29 @@
 
-.book {
-  height: 100vh;
+.book{
+  position: relative;
+}
+
+
+.form-img {
+  object-fit: cover; 
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 500px;
+  height: 2rem;
+}
+
+.book-form {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  background-color: whitesmoke;
+  padding: 10rem 5rem;
+  /* left: 50%; */
 }
