@@ -1,46 +1,63 @@
-"use client"
-
-import { FormEvent } from "react";
 import "./book.css";
-import Image from "next/image";
-import bg from "../../public/images/formBg3.jpg"
 
-
-
-export default () => {
-  
-  const handleSubmit = (e : FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  }
-
-
+export default function BookTablePage() {
   return (
-    <div className="book">
-      <section>
-        <div className="book-bg">
-          <Image 
-            alt="Form Background"
-            src={bg}
-            style={{
-              width: "100%",
-              height : "auto"
-            }}
-            className="form-img"
-          />
-        </div>
-        <div className="book-form">
-          <h2>MAKE A RESERVATION</h2>
+    <main className="book-page">
+      {/* HERO */}
+      <section className="book-hero">
+        <h1>Book a Table</h1>
+        <p>
+          Reserve your spot and enjoy slow coffee, comforting food,
+          and moments worth staying for.
+        </p>
+      </section>
 
-          <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Phone Number" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Date" />
-            <input type="text" placeholder="Time" />
-            <input type="submit" value={"Book"}/>
+      {/* FORM WITH BACKGROUND */}
+      <section className="book-form-section">
+        <div className="form-wrapper">
+          <h2>Reservation Details</h2>
+          <p className="form-intro">
+            Fill in the details below and we’ll have a table ready for you.
+          </p>
+
+          <form className="book-form">
+            <div className="form-row">
+              <div className="form-field">
+                <label>Name</label>
+                <input type="text" placeholder="Your full name" />
+              </div>
+
+              <div className="form-field">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-field">
+                <label>Email</label>
+                <input type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-field">
+                <label>Date</label>
+                <input type="date" />
+              </div>
+
+              <div className="form-field">
+                <label>Time</label>
+                <input type="time" />
+              </div>
+            </div>
+
+            <button type="submit" className="submit-btn">
+              Reserve Table
+            </button>
           </form>
         </div>
       </section>
-    </div>
-  )
+    </main>
+  );
 }

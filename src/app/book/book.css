@@ -1,29 +1,112 @@
+.book-page {
+  background: #f7efe7;
+  display: flex;
+  color: #2f2a26;
+}
 
-.book{
+/* HERO */
+.book-hero {
+  /* padding: 10% 20%; */
+  text-align: center;
+}
+
+.book-hero h1 {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.book-hero p {
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* FORM SECTION WITH BACKGROUND */
+.book-page {
   position: relative;
+  padding: 5% 10% 20% 10%;
+  background-image: url("../../public/images/formBg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
-.form-img {
-  object-fit: cover; 
+/* FORM CARD */
+.form-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+.form-wrapper h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
 
-form{
+.form-intro {
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+/* FORM */
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-field {
   display: flex;
   flex-direction: column;
 }
 
-input {
-  width: 500px;
-  height: 2rem;
+.form-field label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
-.book-form {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  background-color: whitesmoke;
-  padding: 10rem 5rem;
-  /* left: 50%; */
+.form-field input {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #2f2a26;
+  background: #fff;
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: #2f2a26;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
