@@ -27,7 +27,7 @@
 .book-page {
   position: relative;
   padding: 5% 10% 20% 10%;
-  background-image: url("../../../public/images/formBg2.jpg");
+  background-image: url("../../../assets/images/formBg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
