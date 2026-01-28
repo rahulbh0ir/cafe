@@ -2,10 +2,10 @@
 import Image from "next/image";
 import Animation from "./animation";
 import "./story.css";
-import MainImg from "../../public/images/story-main.jpg";
-import S1 from "../../public/images/story-1.jpg";
-import S2 from "../../public/images/story-2.jpg";
-import S3 from "../../public/images/story-3.jpg";
+import MainImg from "../../../public/images/story-main.jpg";
+import S1 from "../../../public/images/story-1.jpg";
+import S2 from "../../../public/images/story-2.jpg";
+import S3 from "../../../public/images/story-3.jpg";
 
 export default () => {
 

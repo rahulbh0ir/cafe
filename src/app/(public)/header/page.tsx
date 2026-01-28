@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/images/logo2.png";
+import Logo from "../../../public/images/logo2.png";
 import { usePathname } from "next/navigation";
 import "./header.css";
 

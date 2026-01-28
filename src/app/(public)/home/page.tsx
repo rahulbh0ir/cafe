@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Animation from "./animations";
 import "./home.css";
-import BgImg from "../../public/images/background3.jpg";
-import RotatePizza from "../../public/images/pizza.png";
-import Interior from "../../public/images/home.jpg";
-import food from "../../public/images/mainFood2.jpg";
-import coffee from "../../public/images/homeCoffee.jpg";
-import pizza from "../../public/images/mainPizza2.jpg";
+import BgImg from "../../../public/images/background3.jpg";
+import RotatePizza from "../../../public/images/pizza.png";
+import Interior from "../../../public/images/home.jpg";
+import food from "../../../public/images/mainFood2.jpg";
+import coffee from "../../../public/images/homeCoffee.jpg";
+import pizza from "../../../public/images/mainPizza2.jpg";
 
 export default function HomePage() {
   return (

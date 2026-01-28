@@ -1,10 +1,10 @@
 import Image from "next/image";
 import "./menu.css";
 import Animation from "./animation";
-import MainImg from "../../public/images/menuMain1.jpg";
-import menuDrinks from "../../public/images/menuDrinks.jpg";
-import menuFood from "../../public/images/menuFood.jpg";
-import menuPizza from "../../public/images/menuPizza.jpg";
+import MainImg from "../../../public/images/menuMain1.jpg";
+import menuDrinks from "../../../public/images/menuDrinks.jpg";
+import menuFood from "../../../public/images/menuFood.jpg";
+import menuPizza from "../../../public/images/menuPizza.jpg";
 
 export default function MenuPage() {
   return (

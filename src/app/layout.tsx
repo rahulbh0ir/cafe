@@ -1,6 +1,6 @@
 import "./globals.css";
-import Footer from "./footer/page";
-import Header from "./header/page";
+import Footer from "./(public)/footer/page";
+import Header from "./(public)/header/page";
 import { Sacramento , Poiret_One } from "next/font/google";
 
 export const metadata = {
