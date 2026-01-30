@@ -8,3 +8,14 @@ export default () => {
     </div>
   )
 }
+
+
+// export async function getServerSideProps() {
+
+//   return {
+//     props : {
+//       name: "rahul",
+//       age : 29
+//     }
+//   }
+// }
