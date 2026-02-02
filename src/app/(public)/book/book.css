@@ -27,7 +27,7 @@
 .book-page {
   position: relative;
   padding: 5% 10% 20% 10%;
-  background-image: url("../../../assets/images/formBg2.jpg");
+  background-image: url("@/assets/images/formBg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,8 +102,9 @@
   padding: 1rem;
   margin-left: 30%;
   border: 1px solid black;
-  background: #b28282; 
-  color: white;
+  /* background: #875454;  */
+  background: rgb(195, 115, 115); 
+  color: white ;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -112,5 +113,7 @@
 .submit-btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
-  background: #984f4f; 
+  /* background: #984f4f;  */
+  background: #954747; 
+  color: white; 
 }

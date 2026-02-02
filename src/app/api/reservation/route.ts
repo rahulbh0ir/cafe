@@ -4,7 +4,7 @@ import { reservationService } from "@/server/services/reservation.service";
 
 export async function GET() {
   return NextResponse.json(
-    { success : true },
+    { success : true, value : "This is Get Request" },
     { status: 200 }
   )
 }

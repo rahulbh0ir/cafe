@@ -22,7 +22,7 @@ const poiret = Poiret_One({
 export default ({ children }: { children: React.ReactNode }) => {
 
   return (
-    <html className={`${lavish.variable} ${poiret.variable}`}>
+    <html data-scroll-behavior="smooth" className={`${lavish.variable} ${poiret.variable}`}>
       <body>
 
         <header>
