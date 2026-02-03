@@ -28,4 +28,13 @@ export const reservationRepository = {
     });
   },
 
+  reservations() {
+    return prisma.reservation.findMany({
+      orderBy : {
+        createdAt : "desc"
+      }
+    })
+  },
+
+
 }

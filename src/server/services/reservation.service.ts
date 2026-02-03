@@ -30,6 +30,12 @@ export const reservationService =  {
   },
 
 
+  async getAllReservations() {
+    const list = await reservationRepository.reservations()
+    return list
+  } 
+
+
   
 
 };  
