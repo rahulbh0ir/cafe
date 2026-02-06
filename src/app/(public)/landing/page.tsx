@@ -28,8 +28,9 @@ export default function HomePage() {
         </video>
 
         <div className="hero-title">
-          <h1>Bean</h1>
-          <h1>There</h1>
+          <h1>With Love</h1>
+          <h1>&</h1>
+          <h1>Care</h1>
         </div>
 
       </section>
