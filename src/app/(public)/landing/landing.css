@@ -13,9 +13,8 @@
 
 .hero-video {
   position: absolute;
-  inset: 0;
-  width: 100vw;
-  object-fit: cover;
+  inset: 0px;
+  width: 100%;
 }
 
 
@@ -32,14 +31,27 @@
 
 .hero-title h1 {
   font-size: 100;
+  margin: 10px;
   font-family: var(--poiret);
 }
 
 .hero-title h1:nth-of-type(2) {
+  font-size: 300;
+  font-weight: lighter;
   position: absolute;
-  font-family: var(--lavish);
+  /* top: 100px; */
+  z-index: -1;
+  /* color: #954747; */
+  /* color: #984f4f;  */
+  color: #af8888; 
+  font-family: var(--sacramento);
 } 
 
+/* video {
+  min-width: 700px;
+  overflow: hidden;
+  object-fit: cover;
+} */
 
 /* REVEAL */
 .reveal {

@@ -1,7 +1,7 @@
 import "./globals.css";
 import Footer from "./(public)/footer/page";
 import Header from "./(public)/header/page";
-import { Sacramento , Poiret_One } from "next/font/google";
+import { Sacramento , Poiret_One, Delicious_Handrawn } from "next/font/google";
 
 export const metadata = {
   title: "Bean There",
@@ -18,11 +18,21 @@ const poiret = Poiret_One({
   weight : ["400"],
 })
 
+const delicious = Delicious_Handrawn({
+  variable : "--delicious",
+  weight : ["400"]
+})
+
+const sacramento = Sacramento({
+  variable : "--sacramento",
+  weight : ["400"]
+})
+
 
 export default ({ children }: { children: React.ReactNode }) => {
 
   return (
-    <html data-scroll-behavior="smooth" className={`${lavish.variable} ${poiret.variable}`}>
+    <html data-scroll-behavior="smooth" className={`${lavish.variable} ${poiret.variable} ${delicious.variable} ${sacramento.variable}`}>
       <body>
 
         <header>
