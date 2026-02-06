@@ -1,0 +1,185 @@
+.home-page {
+  background: #f7efe7;
+  color: #2f2a26;
+}
+
+
+/* HERO */
+.home-hero {
+  position: relative;
+  /* height: 100vh; */
+}
+
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
+.hero-title {
+  color: white;
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title h1 {
+  font-size: 200;
+  font-family: var(--poiret);
+}
+
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* INTRO */
+.home-intro {
+  text-align: center;
+  padding: 140px 20%;
+}
+
+.home-intro h1 {
+  font-family: var(--lavish);
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+}
+
+.home-intro p {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+
+/* ABOUT */
+.home-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  padding: 140px 10%;
+  align-items: center;
+}
+
+.home-about-text h2 {
+  font-family: var(--lavish);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-about-text p {
+  line-height: 1.8;
+}
+
+.home-link {
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.rotate-slow {
+  animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* MENU PREVIEW */
+.home-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 120px 8%;
+}
+
+.home-menu-card {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.home-menu-card img {
+  object-fit: cover;
+  transition: transform 1.2s ease;
+}
+
+.home-menu-card:hover img {
+  transform: scale(1.08);
+}
+
+.home-menu-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+
+.home-menu-text h4 {
+  font-weight: lighter;
+  font-family: var(--lavish);
+  font-size: 3rem;
+  text-shadow: 4px 4px 5px rgb(60, 59, 59);
+}
+
+.home-menu-text p {
+  /* font-size: 1rem; */
+  text-shadow: 4px 4px 5px rgb(60, 59, 59);
+}
+
+
+
+/* ATMOSPHERE */
+.home-atmosphere {
+  position: relative;
+  height: 70vh;
+  margin: 140px 0;
+}
+
+.atmosphere-img {
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.home-atmosphere p {
+  font-family: var(--lavish);
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.4;
+}
+
+/* VISIT */
+.home-visit {
+  text-align: center;
+  padding: 140px 20%;
+}
+
+.home-visit h2 {
+  font-family: var(--lavish);
+}

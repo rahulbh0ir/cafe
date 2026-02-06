@@ -1,6 +1,8 @@
 "use client"
 
+import Image from "next/image";
 import { useState } from "react";
+import FormImg from "@/assets/images/formImg.png";
 
 const initialData = {
   name: "",
@@ -29,19 +31,19 @@ export default () => {
     setLoading(true);
     setSuccess(false);
     setError("");
-    
+
     try {
-      
-      const response = await fetch("/api/reservation" , {
-        method : "POST",
-        headers : { "Content-Type" : "application/json" },
-        body : JSON.stringify(form)
+
+      const response = await fetch("/api/reservation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form)
       });
 
       const data = await response.json()
       console.log(data.reservation)
 
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error(data.message)
       }
 
@@ -52,11 +54,24 @@ export default () => {
     catch (error: any) {
       setError(error.message || "Something went wrong")
     }
-    finally{
+    finally {
       setLoading(false)
     }
 
   }
+
+  if (success) return (
+    <div className="form-wrapper">
+      {/* <h2>Thank you</h2>
+      <p>You Reservation has been confirmed</p>
+      <button type="submit" className="submit-btn" onClick={() => setSuccess(false)} >
+        Book
+      </button> */}
+      <div className="form-image">
+        <Image src={FormImg} alt="" fill />
+      </div>
+    </div>
+  )
 
 
   return (
@@ -100,9 +115,10 @@ export default () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-btn" disabled= {loading} >
+        <button type="submit" className="submit-btn" disabled={loading} >
           {loading ? "Booking..." : "Book"}
         </button>
+        {error ? <p>Something went wrong!</p> : null}
       </form>
     </div>
   )

@@ -5,9 +5,9 @@ import { reservationService } from "@/server/services/reservation.service";
 export async function GET() {
 
   try {
-    const list = await reservationService.getAllReservations()
+    const data = await reservationService.getAllReservations()
     return NextResponse.json(
-      { success: true, list },
+      { success: true, data },
       { status: 200 }
     )
   }

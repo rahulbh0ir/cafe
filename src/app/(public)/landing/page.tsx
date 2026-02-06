@@ -1,0 +1,124 @@
+import Image from "next/image";
+import Animation from "@/components/effects/animations";
+import "./landing.css";
+import BgImg from "../../../assets/images/background3.jpg";
+import RotatePizza from "../../../assets/images/pizza.png";
+import Interior from "../../../assets/images/home.jpg";
+import food from "../../../assets/images/mainFood2.jpg";
+import coffee from "../../../assets/images/homeCoffee.jpg";
+import pizza from "../../../assets/images/mainPizza2.jpg";
+
+export default function HomePage() {
+  return (
+    <main className="home-page">
+      <Animation />
+
+      <section className="home-hero">
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="home/heroImg.png"
+        >
+          {/* <source src="/hero.webm" type="video/webm" /> */}
+          <source src="home/hero.mp4" type="video/mp4" />
+        </video>
+
+        <div className="hero-title">
+          <h1>Bean</h1>
+          <h1>There</h1>
+        </div>
+
+      </section>
+
+
+
+      <section className="home-about reveal">
+        <div className="home-about-text">
+          <h2>More Than Just Coffee</h2>
+          <p>
+            At Bean There, we serve more than drinks. From handcrafted coffee
+            to comforting food and fresh pizzas, everything we make is guided
+            by care, quality, and connection.
+          </p>
+          <span className="home-link">Read our story →</span>
+        </div>
+
+        <div className="home-about-image">
+          <Image
+            src={RotatePizza}
+            alt="Fresh pizza"
+            width={420}
+            height={420}
+            className="rotate-slow"
+          />
+        </div>
+      </section>
+
+
+      {/* 
+
+
+
+      <section className="home-menu reveal">
+        <div className="home-menu-card">
+          <Image src={coffee} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Coffee</h4>
+            <p>Carefully brewed, always comforting.</p>
+          </div>
+        </div>
+
+        <div className="home-menu-card">
+          <Image src={food} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Food</h4>
+            <p>Fresh, simple, and made to be shared.</p>
+          </div>
+        </div>
+
+        <div className="home-menu-card">
+          <Image src={pizza} alt="" fill />
+          <div className="home-menu-text">
+            <h4>Pizza</h4>
+            <p>Handcrafted dough, honest ingredients.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section className="home-atmosphere reveal">
+        <Image
+          src={Interior}
+          alt=""
+          fill
+          className="atmosphere-img"
+        />
+        <p>
+          Come for the coffee. <br />
+          Stay for the moments.
+        </p>
+      </section>
+
+
+
+
+      <section className="home-visit reveal">
+        <h2>Visit Bean There</h2>
+        <p>
+          Good coffee, warm food, and a place that feels like home.
+        </p>
+      </section> */}
+
+
+
+    </main>
+  );
+}

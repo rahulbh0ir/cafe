@@ -2,6 +2,9 @@
   background: #f7efe7;
   display: flex;
   color: #2f2a26;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
 }
 
 /* HERO */
@@ -53,6 +56,10 @@
   margin-bottom: 0.5rem;
 }
 
+.form-wrapper p {
+  text-align: center;
+}
+
 .form-intro {
   margin-bottom: 3rem;
   line-height: 1.7;
@@ -95,6 +102,19 @@
   background: #fff;
 }
 
+.form-image {
+  min-width: 400px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.form-image img {
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 1.5s ease;
+}
+
 /* BUTTON */
 .submit-btn {
   width: 10rem;
@@ -103,8 +123,8 @@
   margin-left: 30%;
   border: 1px solid black;
   /* background: #875454;  */
-  background: rgb(195, 115, 115); 
-  color: white ;
+  background: rgb(195, 115, 115);
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -114,6 +134,6 @@
   transform: translateY(-2px);
   opacity: 0.9;
   /* background: #984f4f;  */
-  background: #954747; 
-  color: white; 
+  background: #954747;
+  color: white;
 }

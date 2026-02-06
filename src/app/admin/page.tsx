@@ -1,6 +1,18 @@
-export default () => {
-  
+import TableCollection from "./table";
+import "./admin.css";
+
+
+export default async () =>   {
   return (
-    <><h2>Admin page</h2></>
-  )
+    <div className="admin">
+      
+    <section  className="admin-page">
+      <h1>All Reservations</h1>
+      <p>View all table bookings</p>
+
+      <TableCollection />
+
+    </section>
+    </div>
+  );
 }
