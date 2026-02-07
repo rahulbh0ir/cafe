@@ -8,11 +8,13 @@ html {
   margin: 0;
   padding: 0;
   font-family: Andale Mono, monospace;
+  /* font-family: var(--poiret); */
     /* font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif; */
 }
 
 body{
-  background-color: #f7efe7;
+  /* background-color: #f7efe7; */
+  background-color: rgb(57, 55, 55);
   /* background-color: white; */
 }
 

@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Animation from "@/components/effects/animations";
 import "./landing.css";
-import BgImg from "../../../assets/images/background3.jpg";
-import RotatePizza from "../../../assets/images/pizza.png";
-import Interior from "../../../assets/images/home.jpg";
-import food from "../../../assets/images/mainFood2.jpg";
-import coffee from "../../../assets/images/homeCoffee.jpg";
-import pizza from "../../../assets/images/mainPizza2.jpg";
+import Bold from "@/components/ui/strong";
+import Back from "../../../../public/home/back.jpg";
+import Front from "../../../../public/home/front.jpg"
+
 
 export default function HomePage() {
   return (
@@ -33,27 +31,43 @@ export default function HomePage() {
           <h1>Care</h1>
         </div>
 
+        <div className="landing-buttons">
+          <button className="btn secondary">Visit Us</button>
+        </div>
+
+
       </section>
 
 
 
-      <section className="home-about reveal">
+      <section className="home-about">
         <div className="home-about-text">
-          <h2>More Than Just Coffee</h2>
+          <h1>Since <span>2026</span></h1>
           <p>
-            At Bean There, we serve more than drinks. From handcrafted coffee
-            to comforting food and fresh pizzas, everything we make is guided
-            by care, quality, and connection.
+            We began Bean There in 2026 with one heartfelt goal: <Bold>to create a space that feels like a second home for the people of Lucknow.
+              Looking back</Bold> , it still feels surreal to see how far we’ve come—from becoming a beloved landmark in Lucknow
+            to being welcomed with open arms by the people of Lucknow.
           </p>
-          <span className="home-link">Read our story →</span>
+          <p>
+            <Bold>
+              A restaurant is never built alone,
+              and none of this would be possible without the passion, dedication, and love of our incredible team.
+            </Bold>
+          </p>
+          <div className="about-button">
+            <button className="btn primary">Read our story</button>
+          </div>
         </div>
 
-        <div className="home-about-image">
+        <div className="home-about-image reveal">
           <Image
-            src={RotatePizza}
+            alt="Pizza Table"
+            src={Back}
+            width={600}
+          />
+          <Image
+            src={Front}
             alt="Fresh pizza"
-            width={420}
-            height={420}
             className="rotate-slow"
           />
         </div>
