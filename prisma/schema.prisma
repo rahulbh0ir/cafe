@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client"
-  moduleFormat = "cjs"
 }
 
 datasource db {
