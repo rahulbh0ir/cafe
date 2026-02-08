@@ -3,7 +3,8 @@ import Animation from "@/components/effects/animations";
 import "./landing.css";
 import Bold from "@/components/ui/strong";
 import Back from "../../../../public/home/back.jpg";
-import Front from "../../../../public/home/front.jpg"
+import Front from "../../../../public/home/front.jpg";
+import Arrow from "../../../../public/home/arrow.png"
 
 
 export default function HomePage() {
@@ -45,7 +46,7 @@ export default function HomePage() {
           <h1>Since <span>2026</span></h1>
           <p>
             We began Bean There in 2026 with one heartfelt goal: <Bold>to create a space that feels like a second home for the people of Lucknow.
-              Looking back</Bold> , it still feels surreal to see how far we’ve come—from becoming a beloved landmark in Lucknow
+              Looking back</Bold>, it still feels surreal to see how far we’ve come—from becoming a beloved landmark in Lucknow
             to being welcomed with open arms by the people of Lucknow.
           </p>
           <p>
@@ -55,7 +56,16 @@ export default function HomePage() {
             </Bold>
           </p>
           <div className="about-button">
-            <button className="btn primary">Read our story</button>
+            <button className="btn primary">Read our story
+              <span>
+                <Image
+                  alt="arrow"
+                  src={Arrow}
+                  width={20}
+                  height={20}
+                />
+              </span>
+            </button>
           </div>
         </div>
 

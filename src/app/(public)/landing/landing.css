@@ -70,7 +70,11 @@ video {
   bottom: 10%;
 }
 
+
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 28px;
   font-size: 1rem;
   cursor: pointer;
@@ -160,6 +164,17 @@ video {
 
 .about-button {
   padding: 3rem 0;
+}
+
+.about-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.about-button button span {
+  padding: 5px 0 0 5px ;
 }
 
 
