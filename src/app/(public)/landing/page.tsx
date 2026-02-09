@@ -2,10 +2,11 @@ import Image from "next/image";
 import Animation from "@/components/effects/animations";
 import "./landing.css";
 import Bold from "@/components/ui/strong";
+import Arrow from "../../../../public/home/arrow.png";
+
 import Back from "../../../../public/home/back.jpg";
 import Front from "../../../../public/home/front.jpg";
-import Arrow from "../../../../public/home/arrow.png"
-import Coffee from "../../../../public/home/coffee.jpg"
+import Coffee from "../../../../public/home/coffee.jpg";
 
 
 export default function HomePage() {
@@ -88,7 +89,7 @@ export default function HomePage() {
 
       <section className="coffeeContainer">
 
-        <div className="coffeeImg">
+        <div className="coffeeImg reveal">
           <Image
             alt="coffee image"
             src={Coffee}

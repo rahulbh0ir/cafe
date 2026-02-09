@@ -194,7 +194,7 @@
 .coffeeContainer{
   /* background-color: #af8888; */
   height: 100vh;
-  background-color: white;
+  background-color: rgb(105, 102, 102);
   height: max-content;
   padding: 5rem 2rem;
   display: grid;
@@ -207,7 +207,7 @@
 }
 
 .coffeeImg img {
-  border-radius: 16px;
+  border-radius: 5px;
   object-fit: cover;
   transition: transform 1.5s ease;
 }
@@ -219,18 +219,20 @@
 
 .coffeeDetails h1 {
   font-family: var(--poiret);
-  color: rgb(49, 46, 46);;
-  font-size: 100;
+  /* color: rgb(49, 46, 46); */
+  color: white;
+  font-size: 100; 
 }
 
 .coffeeDetails h1 span {
-  color: #af8888;
+  /* color: #af8888; */
+  color: rgb(49, 46, 46);
   font-family: var(--poiret);
 }
 
 
 .coffeeDetails p {
   padding: 2rem 0;
-  color: black;
+  color: white;
   line-height: 1.8;
 }
