@@ -5,6 +5,7 @@ import Bold from "@/components/ui/strong";
 import Back from "../../../../public/home/back.jpg";
 import Front from "../../../../public/home/front.jpg";
 import Arrow from "../../../../public/home/arrow.png"
+import Coffee from "../../../../public/home/coffee.jpg"
 
 
 export default function HomePage() {
@@ -32,7 +33,7 @@ export default function HomePage() {
           <h1>Care</h1>
         </div>
 
-        <div className="landing-buttons">
+        <div className="home-btn">
           <button className="btn secondary">Visit Us</button>
         </div>
 
@@ -71,77 +72,49 @@ export default function HomePage() {
 
         <div className="home-about-image reveal">
           <Image
-            alt="Pizza Table"
             src={Back}
+            alt="Coffee Back"
             width={600}
+            className="coffeeBack"
           />
           <Image
             src={Front}
-            alt="Fresh pizza"
-            className="rotate-slow"
+            alt="Coffee Front"
+            className="coffeeFront"
           />
         </div>
       </section>
 
 
-      {/* 
+      <section className="coffeeContainer">
 
-
-
-      <section className="home-menu reveal">
-        <div className="home-menu-card">
-          <Image src={coffee} alt="" fill />
-          <div className="home-menu-text">
-            <h4>Coffee</h4>
-            <p>Carefully brewed, always comforting.</p>
-          </div>
+        <div className="coffeeImg">
+          <Image
+            alt="coffee image"
+            src={Coffee}
+            fill
+          />
         </div>
 
-        <div className="home-menu-card">
-          <Image src={food} alt="" fill />
-          <div className="home-menu-text">
-            <h4>Food</h4>
-            <p>Fresh, simple, and made to be shared.</p>
-          </div>
+        <div className="coffeeDetails">
+          <h1>Our <span>Coffee</span></h1>
+
+          <p>
+            We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
+            For us, coffee is a craft in progress. <Bold>We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold> 
+          </p>
+          <p>
+            Each outlet features an exclusive barista creation that changes from place to place, so make sure you ask for the house favorite when you visit
+            A few standouts from our menu are the <Bold> nutty Brown Butter Latte, the aromatic Cinnamon Cappuccino.</Bold>
+          </p>
+
+
+
         </div>
 
-        <div className="home-menu-card">
-          <Image src={pizza} alt="" fill />
-          <div className="home-menu-text">
-            <h4>Pizza</h4>
-            <p>Handcrafted dough, honest ingredients.</p>
-          </div>
-        </div>
+
+
       </section>
-
-
-
-
-
-
-      <section className="home-atmosphere reveal">
-        <Image
-          src={Interior}
-          alt=""
-          fill
-          className="atmosphere-img"
-        />
-        <p>
-          Come for the coffee. <br />
-          Stay for the moments.
-        </p>
-      </section>
-
-
-
-
-      <section className="home-visit reveal">
-        <h2>Visit Bean There</h2>
-        <p>
-          Good coffee, warm food, and a place that feels like home.
-        </p>
-      </section> */}
-
 
 
     </main>

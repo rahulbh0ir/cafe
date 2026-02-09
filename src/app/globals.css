@@ -16,6 +16,7 @@ body{
   /* background-color: #f7efe7; */
   background-color: rgb(57, 55, 55);
   /* background-color: white; */
+    /* margin-left: auto; */
 }
 
 ::-webkit-scrollbar {
@@ -44,10 +45,10 @@ body{
 }
 
 /* .main-content {
-  background-color: rgb(170, 116, 116);
-} */
-
-
+  /* background-color: rgb(170, 116, 116); */
+  /* margin-left: auto; 
+} 
+*/
 
 
 

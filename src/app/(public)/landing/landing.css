@@ -1,7 +1,6 @@
 .home-page {
   max-width: fit-content;
   margin-inline: auto;
-  background: #f7efe7;
   max-width: 2000px;
   color: #2f2a26;
 }
@@ -51,15 +50,9 @@
   font-family: var(--sacramento);
 } 
 
-video {
-  min-width: 700px;
-  overflow: hidden;
-  object-fit: cover;
-}
 
-/* REVEAL */
 
-.landing-buttons{
+.home-btn{
   width: 100%;
   display: flex;
   align-items: center;
@@ -83,8 +76,8 @@ video {
 }
 
 
- .btn.primary {
-   /* background: rgb(49, 46, 46);  */
+.btn.primary {
+  /* background: rgb(49, 46, 46);  */
   /* background: #3b2f2f; */
   background: transparent;
   border: 1px solid white;
@@ -106,6 +99,10 @@ video {
   transform: translateY(-2px);
   opacity: 0.9;
 }
+
+
+
+/* REVEAL */
 
 .reveal {
   opacity: 0;
@@ -185,102 +182,55 @@ video {
   position: relative;
 }
 
-.rotate-slow {
+.coffeeFront {
   width: 500px;
   height: auto;
   position: absolute;
   left: -10rem;
   bottom: -3rem;
-  /* animation: spin 120s linear infinite; */
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 
-
-
-
-/* MENU PREVIEW */
-.home-menu {
+.coffeeContainer{
+  /* background-color: #af8888; */
+  height: 100vh;
+  background-color: white;
+  height: max-content;
+  padding: 5rem 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 120px 8%;
+  grid-template-columns: 1fr 1fr;
 }
 
-.home-menu-card {
+.coffeeImg{
+  height: 500px;
   position: relative;
-  height: 360px;
-  overflow: hidden;
-  border-radius: 20px;
 }
 
-.home-menu-card img {
+.coffeeImg img {
+  border-radius: 16px;
   object-fit: cover;
-  transition: transform 1.2s ease;
+  transition: transform 1.5s ease;
 }
 
-.home-menu-card:hover img {
-  transform: scale(1.08);
-}
-
-.home-menu-text {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: white;
-}
-
-.home-menu-text h4 {
-  font-weight: lighter;
-  font-family: var(--lavish);
-  font-size: 3rem;
-  text-shadow: 4px 4px 5px rgb(60, 59, 59);
-}
-
-.home-menu-text p {
-  /* font-size: 1rem; */
-  text-shadow: 4px 4px 5px rgb(60, 59, 59);
+.coffeeDetails {
+  padding: 2rem;
 }
 
 
-
-/* ATMOSPHERE */
-.home-atmosphere {
-  position: relative;
-  height: 70vh;
-  margin: 140px 0;
+.coffeeDetails h1 {
+  font-family: var(--poiret);
+  color: rgb(49, 46, 46);;
+  font-size: 100;
 }
 
-.atmosphere-img {
-  object-fit: cover;
-  filter: brightness(0.6);
+.coffeeDetails h1 span {
+  color: #af8888;
+  font-family: var(--poiret);
 }
 
-.home-atmosphere p {
-  font-family: var(--lavish);
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
-  color: white;
-  font-size: 3.5rem;
-  line-height: 1.4;
-}
 
-/* VISIT */
-.home-visit {
-  text-align: center;
-  padding: 140px 20%;
-}
-
-.home-visit h2 {
-  font-family: var(--lavish);
+.coffeeDetails p {
+  padding: 2rem 0;
+  color: black;
+  line-height: 1.8;
 }
