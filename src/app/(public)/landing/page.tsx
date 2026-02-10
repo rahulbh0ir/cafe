@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Animation from "@/components/effects/animations";
 import "./landing.css";
-import Bold from "@/components/ui/strong";
+import Bold from "@/components/ui/bold";
 import Arrow from "../../../../public/home/arrow.png";
 
-import Back from "../../../../public/home/back.jpg";
-import Front from "../../../../public/home/front.jpg";
-import Coffee from "../../../../public/home/coffee.jpg";
-
+import Back from "../../../../public/home/backColor.jpg";
+import Front from "../../../../public/home/frontColor.jpg";
+import Coffee from "../../../../public/home/coffeeColor.jpg";
+import Food from "../../../../public/home/foodColor.jpg"
+import Bake from "../../../../public/home/bakeColor.jpg"
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -58,16 +60,18 @@ export default function HomePage() {
             </Bold>
           </p>
           <div className="about-button">
-            <button className="btn primary">Read our story
-              <span>
-                <Image
-                  alt="arrow"
-                  src={Arrow}
-                  width={20}
-                  height={20}
-                />
-              </span>
-            </button>
+            <Link href="/story">
+              <button className="btn primary">Read our story
+                <span>
+                  <Image
+                    alt="arrow"
+                    src={Arrow}
+                    width={20}
+                    height={20}
+                  />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -87,9 +91,10 @@ export default function HomePage() {
       </section>
 
 
-      <section className="coffeeContainer">
+      {/* Section 1 */}
 
-        <div className="coffeeImg reveal">
+      <section className="info">
+        <div className="infoImg reveal">
           <Image
             alt="coffee image"
             src={Coffee}
@@ -97,27 +102,94 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="coffeeDetails">
+        <div className="infoDetails">
           <h1>Our <span>Coffee</span></h1>
 
           <p>
             We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
-            For us, coffee is a craft in progress. <Bold>We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold> 
+            For us, coffee is a craft in progress. <Bold color="dark">We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold>
+          </p>
+          <p>
+            Each outlet features an exclusive barista creation that changes from place to place, so make sure you ask for the house favorite when you visit
+            A few standouts from our menu are the <Bold color="dark"> nutty Brown Butter Latte, the aromatic Cinnamon Cappuccino.</Bold>
+          </p>
+        </div>
+      </section>
+
+
+
+      {/* Section 2 */}
+
+      <section className="info reverse">
+        <div className="infoImg reveal">
+          <Image
+            alt="coffee image"
+            src={Food}
+            fill
+          />
+        </div>
+
+        <div className="infoDetails">
+          <h1>Our <span>Food</span></h1>
+
+          <p>
+            Our kitchen brings together familiar favorites and creative house specials.
+            We’re big on comfort food, made using top-quality ingredients and refreshed with seasonal ideas.
+            If you’re craving something that’s not on the menu, just ask for the chef—we’re always happy to try and make it happen.
+          </p>
+          <p>
+            Some of our most-loved dishes include <Bold> spicy loaded fries, wood-fired pizzas, baked dough bites filled with goodness, hearty burrito bowls,
+              and our signature garlic aioli </Bold> that pairs with almost everything.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 3 */}
+
+
+      <section className="info last">
+        <div className="infoImg reveal">
+          <Image
+            alt="coffee image"
+            src={Bake}
+            fill
+          />
+        </div>
+
+        <div className="infoDetails">
+          <h1>Our <span>Bakes</span></h1>
+
+          <p>
+            We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
+            For us, coffee is a craft in progress. <Bold>We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold>
           </p>
           <p>
             Each outlet features an exclusive barista creation that changes from place to place, so make sure you ask for the house favorite when you visit
             A few standouts from our menu are the <Bold> nutty Brown Butter Latte, the aromatic Cinnamon Cappuccino.</Bold>
           </p>
-
-
-
         </div>
-
 
 
       </section>
 
 
-    </main>
+      <section>
+        <div className="infoButton">
+          <Link href="/menu">
+            <button className="btn primary">See Menu
+              <span>
+                <Image
+                  alt="arrow"
+                  src={Arrow}
+                  width={20}
+                  height={20}
+                />
+              </span>
+            </button>
+          </Link>
+        </div>
+      </section>
+
+    </main >
   );
 }

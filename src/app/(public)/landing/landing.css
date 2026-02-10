@@ -5,6 +5,9 @@
   color: #2f2a26;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* HERO */
 .home-hero {
@@ -35,7 +38,7 @@
 
 .hero-title h1 {
   font-size: 100;
-  margin: 10px; 
+  margin: 10px;
   font-family: var(--poiret);
 }
 
@@ -46,13 +49,13 @@
   z-index: -1;
   /* color: #954747; */
   /* color: #984f4f;  */
-  color: #af8888; 
+  color: #af8888;
   font-family: var(--sacramento);
-} 
+}
 
 
 
-.home-btn{
+.home-btn {
   width: 100%;
   display: flex;
   align-items: center;
@@ -82,7 +85,7 @@
   background: transparent;
   border: 1px solid white;
   color: white;
-} 
+}
 
 .btn.secondary {
   /* background: #af8888;  */
@@ -93,7 +96,7 @@
 
 .btn:hover {
   /* background: #984f4f;  */
-  background: #954747 ; 
+  background: #954747;
   border: 1px solid white;
   color: white;
   transform: translateY(-2px);
@@ -155,7 +158,7 @@
 }
 
 
-.home-about-image img{
+.home-about-image img {
   border-radius: 5px;
 }
 
@@ -171,7 +174,7 @@
 }
 
 .about-button button span {
-  padding: 5px 0 0 5px ;
+  padding: 5px 0 0 5px;
 }
 
 
@@ -191,48 +194,97 @@
 }
 
 
-.coffeeContainer{
+.info {
   /* background-color: #af8888; */
   height: 100vh;
   background-color: rgb(105, 102, 102);
   height: max-content;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.coffeeImg{
+.infoImg {
   height: 500px;
   position: relative;
 }
 
-.coffeeImg img {
+.infoImg img {
   border-radius: 5px;
   object-fit: cover;
   transition: transform 1.5s ease;
 }
 
-.coffeeDetails {
+.infoDetails {
   padding: 2rem;
 }
 
+.info.last {
+  background-color: rgb(49, 46, 46);
+  /* background-color: #2f2a26; */
+}
 
-.coffeeDetails h1 {
+.info.last h1 span {
+  color: #af8888;
+}
+
+
+.infoDetails h1 {
   font-family: var(--poiret);
-  /* color: rgb(49, 46, 46); */
+  font-size: 100;
   color: white;
-  font-size: 100; 
 }
 
-.coffeeDetails h1 span {
-  /* color: #af8888; */
-  color: rgb(49, 46, 46);
+.infoDetails h1 span {
   font-family: var(--poiret);
+  color: #2f2a26;
 }
 
 
-.coffeeDetails p {
+.infoDetails p {
   padding: 2rem 0;
   color: white;
   line-height: 1.8;
+}
+
+
+.info.reverse {
+  direction: rtl;
+  background-color: white;
+  /* background-color:#2f2a26; */
+}
+
+.info.reverse .infoDetails {
+  color: #2f2a26;
+  direction: ltr;
+}
+
+.info.reverse .infoDetails span {
+  color: #af8888;
+}
+
+.info.reverse .infoDetails h1,
+.info.reverse .infoDetails p {
+  color: #5b515d;
+}
+
+
+.infoButton {
+  padding-bottom: 3rem;
+  /* background-color: #2f2a26; */
+  background-color: rgb(49, 46, 46);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.infoButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.infoButton button span {
+  padding: 5px 0 0 5px;
 }
