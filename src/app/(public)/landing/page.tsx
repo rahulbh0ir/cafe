@@ -91,6 +91,10 @@ export default function HomePage() {
       </section>
 
 
+
+
+
+
       {/* Section 1 */}
 
       <section className="info">
@@ -193,3 +197,5 @@ export default function HomePage() {
     </main >
   );
 }
+
+
