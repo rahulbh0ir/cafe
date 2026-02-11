@@ -14,7 +14,6 @@
 .link {
   word-spacing: -3px;
   color: white;
-  /* color: black; */
   padding: 10px;
   margin: 20px;
   text-decoration: none;
@@ -25,13 +24,14 @@
 }
 
 .link:hover {
-  color: rgb(172, 61, 61);
+  /* color: rgb(172, 61, 61); */
+  border-bottom: 2px solid white;
 }
 
 .act-link {
+  border-bottom: 2px solid #af8888;
   word-spacing: -3px;
-  color: rgb(172, 61, 61);
-  border-bottom: solid 2.2px rgb(172, 61, 61);
+  color: #af8888;
   padding: 10px;
   margin: 20px;
   text-decoration: none;

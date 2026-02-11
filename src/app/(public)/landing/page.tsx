@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
 
         <div className="home-btn">
-          <button className="btn secondary">Visit Us</button>
+          <button className="btn primary">Visit Us</button>
         </div>
 
 
@@ -111,11 +111,11 @@ export default function HomePage() {
 
           <p>
             We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
-            For us, coffee is a craft in progress. <Bold color="dark">We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold>
+            For us, coffee is a craft in progress. <Bold>We’re always exploring new techniques and flavors to make sure every espresso hits just right.</Bold>
           </p>
           <p>
             Each outlet features an exclusive barista creation that changes from place to place, so make sure you ask for the house favorite when you visit
-            A few standouts from our menu are the <Bold color="dark"> nutty Brown Butter Latte, the aromatic Cinnamon Cappuccino.</Bold>
+            A few standouts from our menu are the <Bold> nutty Brown Butter Latte, the aromatic Cinnamon Cappuccino.</Bold>
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="infoDetails">
+        <div className="infoDetails reverse">
           <h1>Our <span>Food</span></h1>
 
           <p>
@@ -151,7 +151,7 @@ export default function HomePage() {
       {/* Section 3 */}
 
 
-      <section className="info last">
+      <section className="info">
         <div className="infoImg reveal">
           <Image
             alt="coffee image"
@@ -180,16 +180,7 @@ export default function HomePage() {
       <section>
         <div className="infoButton">
           <Link href="/menu">
-            <button className="btn primary">See Menu
-              <span>
-                <Image
-                  alt="arrow"
-                  src={Arrow}
-                  width={20}
-                  height={20}
-                />
-              </span>
-            </button>
+            <button className="btn secondary">See Menu</button>
           </Link>
         </div>
       </section>
