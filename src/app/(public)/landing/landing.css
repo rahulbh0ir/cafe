@@ -159,7 +159,7 @@ a {
 
 
 .home-about-image img {
-  border-radius: 5px;
+  border-radius: 16px;
 }
 
 .about-button {
@@ -216,7 +216,7 @@ a {
 }
 
 .infoImg img {
-  border-radius: 5px;
+  border-radius: 16px;
   object-fit: cover;
   transition: transform 1.5s ease;
 }
