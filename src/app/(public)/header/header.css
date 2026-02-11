@@ -28,9 +28,9 @@
 }
 
 .act-link {
-  border-bottom: 2px solid #af8888;
+  border-bottom: 2px solid white;
   word-spacing: -3px;
-  color: #af8888;
+  color: white;
   padding: 10px;
   margin: 20px;
   text-decoration: none;
