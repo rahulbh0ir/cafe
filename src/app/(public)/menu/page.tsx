@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./menu.css";
 import Animation from "./animation";
-import MainImg from "../../../assets/images/menuMain1.jpg";
+import MainImg from "../../../assets/images/background3.jpg";
 import menuDrinks from "../../../assets/images/menuDrinks.jpg";
 import menuFood from "../../../assets/images/menuFood.jpg";
 import menuPizza from "../../../assets/images/menuPizza.jpg";
