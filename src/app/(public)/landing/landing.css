@@ -129,8 +129,7 @@ a {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 6rem;
-  /* padding: 5rem 2%; */
-  padding: 10rem 2rem;
+  padding: 6rem 2rem;
   align-items: center;
 }
 
