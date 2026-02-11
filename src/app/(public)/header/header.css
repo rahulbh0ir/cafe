@@ -46,7 +46,7 @@
 /* Hide mobile icon on desktop */
 .menu-icon {
   display: none;
-  font-size: 20px;
+  font-size: 40px;
   color: white;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
   }
 
   .logo-img {
-    width: 110px !important;
+    width: 130px !important;
     height: auto !important;
   }
 
