@@ -40,7 +40,7 @@ a {
 }
 
 .hero-title h1 {
-  font-size: clamp(2.5rem, 8vw, 100px);
+  font-size: clamp(3rem, 8vw, 100px);
   margin: 10px;
   font-family: var(--poiret);
 }
@@ -136,7 +136,7 @@ a {
 .home-about-text h1 {
   font-family: var(--poiret);
   color: white;
-  font-size: 100;
+  font-size: 100px;
 }
 
 .home-about-text h1 span {
@@ -228,7 +228,7 @@ a {
 
 .infoDetails h1 {
   font-family: var(--poiret);
-  font-size: 100;
+  font-size: 100px;
   color: #2f2a26;
 }
 

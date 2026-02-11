@@ -7,7 +7,7 @@
 /* HERO */
 .story-hero {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -69,6 +69,8 @@
 
 .story-section.reverse {
   direction: rtl;
+  color: #f7efe7;
+  background-color: #2f2a26;
 }
 
 .story-section.reverse .story-content {
@@ -121,7 +123,7 @@
 
   /* HERO */
   .story-hero {
-    height: 60vh;
+    height: 100vh;
   }
 
   .story-text h1 {
