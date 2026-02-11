@@ -2,13 +2,15 @@
 
 .header {
   position: absolute;
-  height: 18vh;
+  /* height: 18vh; */
+  height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background: none;
   z-index: 20;
   width: 100vw;
+  /* padding: 2rem 0; */
 }
 
 .link {
@@ -37,4 +39,59 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+}
+
+
+
+/* Hide mobile icon on desktop */
+.menu-icon {
+  display: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.nav-links {
+  display: flex;
+}
+
+/* Mobile styles */
+
+
+@media (max-width: 768px) {
+
+  .header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .logo-img {
+    width: 110px !important;
+    height: auto !important;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .menu-icon {
+    display: block;
+  }
+
+
+  .mobile-menu {
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
 }
