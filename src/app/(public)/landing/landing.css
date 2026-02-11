@@ -211,11 +211,14 @@ a {
 
 
 .infoImg {
-  height: 500px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .infoImg img {
+  height: 500px;
   border-radius: 16px;
   object-fit: cover;
   transition: transform 1.5s ease;
