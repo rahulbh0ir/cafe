@@ -104,3 +104,60 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 400px;
 }
+
+
+
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .menu-hero {
+    height: 60vh;
+  }
+
+  .menu-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .menu-text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  /* MENU SECTIONS */
+  .menu-section {
+    grid-template-columns: 1fr; /* stack */
+    padding: 60px 25px;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  /* Disable reverse direction on mobile */
+  .menu-section.reverse {
+    direction: ltr;
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .menu-content li {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .menu-image {
+    height: 260px;
+  }
+}

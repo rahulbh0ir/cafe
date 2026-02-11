@@ -110,3 +110,59 @@
   line-height: 1.8;
   max-width: 520px;
 }
+
+
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .story-hero {
+    height: 60vh;
+  }
+
+  .story-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .story-text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  /* STORY SECTIONS */
+  .story-section {
+    grid-template-columns: 1fr; /* stack */
+    padding: 60px 25px;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  /* Remove reverse direction trick on mobile */
+  .story-section.reverse {
+    direction: ltr;
+  }
+
+  .story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .story-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .story-image {
+    height: 260px;
+  }
+}
