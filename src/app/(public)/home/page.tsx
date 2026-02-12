@@ -2,10 +2,11 @@ import Image from "next/image";
 import Animation from "./animations";
 import "./home.css";
 
-import BgImg from "../../../assets/images/background3.jpg";
+import BgImg from "../../../assets/images/background4.jpg";
 import RotatePizza from "../../../assets/images/pizza.png";
 import Interior from "../../../assets/images/home.jpg";
-import food from "../../../assets/images/mainFood2.jpg";
+
+import food from "../../../assets/images/mainFood.jpg";
 import coffee from "../../../assets/images/homeCoffee.jpg";
 import pizza from "../../../assets/images/mainPizza2.jpg";
 
