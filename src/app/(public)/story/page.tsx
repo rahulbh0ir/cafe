@@ -33,7 +33,7 @@ export default () => {
         {/* SECTION 1 */}
         <section className="story-section">
           <div className="story-image">
-            <Image src={S1} alt="story-1" fill />
+            <Image src={S1} alt="story-1" priority fill />
           </div>
           <div className="story-content">
             <h2>Where It All Began</h2>
@@ -53,7 +53,7 @@ export default () => {
         {/* SECTION 2 */}
         <section className="story-section reverse">
           <div className="story-image">
-            <Image src={S2} alt="story-2" fill />
+            <Image src={S2} alt="story-2" priority fill />
           </div>
           <div className="story-content">
             <h2>Crafted With Heart</h2>
@@ -73,7 +73,7 @@ export default () => {
         {/* SECTION 3 */}
         <section className="story-section">
           <div className="story-image">
-            <Image src={S3} alt="story-3" fill />
+            <Image src={S3} alt="story-3" priority fill />
           </div>
           <div className="story-content">
             <h2>More Than a Café</h2>

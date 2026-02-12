@@ -68,7 +68,7 @@ export default () => {
         Book
       </button> */}
       <div className="form-image">
-        <Image src={FormImg} alt="" fill />
+        <Image src={FormImg} priority alt="" fill />
       </div>
     </div>
   )

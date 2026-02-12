@@ -29,7 +29,7 @@ export default function MenuPage() {
       {/* SECTION 1 */}
       <section className="menu-section">
         <div className="menu-image">
-          <Image src={menuDrinks} alt="" fill />
+          <Image src={menuDrinks} alt="" priority fill />
         </div>
         <div className="menu-content">
           <h2>Coffee & Drinks</h2>
@@ -46,7 +46,7 @@ export default function MenuPage() {
       {/* SECTION 2 */}
       <section className="menu-section reverse">
         <div className="menu-image">
-          <Image src={menuFood} alt="" fill />
+          <Image src={menuFood} alt="" priority fill />
         </div>
         <div className="menu-content">
           <h2>Fresh Food & Bakes</h2>
@@ -63,7 +63,7 @@ export default function MenuPage() {
       {/* SECTION 3 */}
       <section className="menu-section">
         <div className="menu-image">
-          <Image src={menuPizza} alt="" fill />
+          <Image src={menuPizza} alt="" priority fill />
         </div>
         <div className="menu-content">
           <h2>Pizza & Specials</h2>
