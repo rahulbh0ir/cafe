@@ -1,11 +1,11 @@
 
 import Image from "next/image";
-import Animation from "./animation";
+import Animation from "../../../components/effects/animations";
 import "./story.css";
-import MainImg from "../../../assets/images/story-main.jpg";
-import S1 from "../../../assets/images/story-1.jpg";
-import S2 from "../../../assets/images/story-2.jpg";
-import S3 from "../../../assets/images/story-3.jpg";
+import MainImg from "../../../../public/story/storyHero.jpg";
+import Story1 from "../../../../public/story/story-1.jpg";
+import Story2 from "../../../../public/story/story-2.jpg";
+import Story3 from "../../../../public/story/story-3.jpg";
 
 export default () => {
 
@@ -31,9 +31,14 @@ export default () => {
         </section>
 
         {/* SECTION 1 */}
-        <section className="story-section">
+        <section className="story-section reveal">
           <div className="story-image">
-            <Image src={S1} alt="story-1" priority fill />
+            <Image
+              src={Story1}
+              alt="story-1"
+              priority
+              fill
+            />
           </div>
           <div className="story-content">
             <h2>Where It All Began</h2>
@@ -43,17 +48,22 @@ export default () => {
               care. What began as a single table idea soon became a shared vision.
             </p>
             <p>
-              We wanted to build more than just a spot to grab a drink. 
-              From the very beginning, our goal was to create an environment where conversations flow easily, mornings feel gentler, and 
+              We wanted to build more than just a spot to grab a drink.
+              From the very beginning, our goal was to create an environment where conversations flow easily, mornings feel gentler, and
               every visit feels familiar — no matter how many times you’ve been here.
             </p>
           </div>
         </section>
 
         {/* SECTION 2 */}
-        <section className="story-section reverse">
+        <section className="story-section reverse reveal">
           <div className="story-image">
-            <Image src={S2} alt="story-2" priority fill />
+            <Image
+              src={Story2}
+              alt="story-2"
+              priority
+              fill
+            />
           </div>
           <div className="story-content">
             <h2>Crafted With Heart</h2>
@@ -63,28 +73,33 @@ export default () => {
               matter the most.
             </p>
             <p>
-              We focus on honest ingredients and familiar flavors — food that feels satisfying without being complicated. 
-              Whether you’re stopping by for a quick bite or settling in for a longer visit, 
+              We focus on honest ingredients and familiar flavors — food that feels satisfying without being complicated.
+              Whether you’re stopping by for a quick bite or settling in for a longer visit,
               our food is meant to make you feel relaxed and at ease.
             </p>
           </div>
         </section>
 
         {/* SECTION 3 */}
-        <section className="story-section">
+        <section className="story-section reveal">
           <div className="story-image">
-            <Image src={S3} alt="story-3" priority fill />
+            <Image
+              src={Story3}
+              alt="story-3"
+              priority
+              fill
+            />
           </div>
           <div className="story-content">
             <h2>More Than a Café</h2>
             <p>
-             Bean There is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and 
-             soft lighting create a space where time seems to slow down.
+              Bean There is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and
+              soft lighting create a space where time seems to slow down.
             </p>
             <p>
-            More than anything, our café is about people. Friends catching up, quiet solo moments, 
-            shared laughter — these are the moments that shape our space. 
-            We’re proud to be a part of your daily routines and special memories.
+              More than anything, our café is about people. Friends catching up, quiet solo moments,
+              shared laughter — these are the moments that shape our space.
+              We’re proud to be a part of your daily routines and special memories.
             </p>
           </div>
         </section>

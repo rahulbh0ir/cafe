@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import FormImg from "@/assets/images/formImg.png";
+
+import FormImg from "../../../../public/book/form-1.jpg";
 
 const initialData = {
   name: "",

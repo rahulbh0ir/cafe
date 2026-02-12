@@ -1,10 +1,10 @@
 import Image from "next/image";
 import "./menu.css";
-import Animation from "./animation";
-import MainImg from "../../../assets/images/background3.jpg";
-import menuDrinks from "../../../assets/images/menuDrinks.jpg";
-import menuFood from "../../../assets/images/menuFood.jpg";
-import menuPizza from "../../../assets/images/menuPizza.jpg";
+import Animation from "../../../components/effects/animations";
+import MainImg from "../../../../public/menu/menuhero.jpg";
+import menuDrinks from "../../../../public/menu/menu-1.jpg";
+import menuFood from "../../../../public/menu/menu-2.jpg";
+import menuPizza from "../../../../public/menu/menu-3.jpg";
 
 export default function MenuPage() {
   return (
@@ -17,6 +17,7 @@ export default function MenuPage() {
           src={MainImg}
           alt="Our Menu"
           fill
+          sizes="100vw"
           priority
           className="menu-img"
         />
@@ -27,9 +28,14 @@ export default function MenuPage() {
       </section>
 
       {/* SECTION 1 */}
-      <section className="menu-section">
+      <section className="menu-section reveal">
         <div className="menu-image">
-          <Image src={menuDrinks} alt="" priority fill />
+          <Image
+            src={menuDrinks}
+            alt="Menu Drinks"
+            priority
+            fill
+          />
         </div>
         <div className="menu-content">
           <h2>Coffee & Drinks</h2>
@@ -44,9 +50,14 @@ export default function MenuPage() {
       </section>
 
       {/* SECTION 2 */}
-      <section className="menu-section reverse">
+      <section className="menu-section reverse reveal">
         <div className="menu-image">
-          <Image src={menuFood} alt="" priority fill />
+          <Image
+            src={menuFood}
+            alt=""
+            priority
+            fill
+          />
         </div>
         <div className="menu-content">
           <h2>Fresh Food & Bakes</h2>
@@ -61,9 +72,14 @@ export default function MenuPage() {
       </section>
 
       {/* SECTION 3 */}
-      <section className="menu-section">
+      <section className="menu-section reveal">
         <div className="menu-image">
-          <Image src={menuPizza} alt="" priority fill />
+          <Image
+            src={menuPizza}
+            alt=""
+            priority
+            fill
+          />
         </div>
         <div className="menu-content">
           <h2>Pizza & Specials</h2>
