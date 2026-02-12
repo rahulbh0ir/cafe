@@ -10,6 +10,21 @@
   transition: all 0.6s ease;
 }
 
+
+.header.scrolled {
+  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  padding: 2px 40px;
+}
+
+
+.header.scrolled img {
+  width: 140px;
+  height: auto;
+}
+
+
 .link {
   word-spacing: -3px;
   color: white;
@@ -52,17 +67,7 @@
 }
 
 
-.header.scrolled {
-  position: fixed;
-  background: rgba(68, 67, 67, 0.171);
-  backdrop-filter: blur(10px);
-  padding: 2px 40px;
-}
 
-.header.scrolled img {
-  width: 140px;
-  height: auto;
-}
 
 
 

@@ -1,11 +1,10 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./header.css";
-
 import Logo from "../../../../public/header/logo4.png";
 
 interface LinkType {
@@ -24,9 +23,32 @@ export default function Header() {
 
   const path = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setSticky(true);
+      }
+      else {
+        setSticky(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+
+  }, []);
+
+
 
   return (
-    <div className="header">
+    <div className={`header ${sticky ? "scrolled" : ""}`}>
 
       <div className="logo">
         <Link href="/">
@@ -58,7 +80,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu Icon */}
-      <div 
+      <div
         className="menu-icon"
         onClick={() => setMenuOpen(!menuOpen)}
       >
