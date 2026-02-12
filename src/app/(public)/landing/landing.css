@@ -335,8 +335,8 @@ a {
   }
 
 
-  .infoDetails h1,
-  .home-about-text h1 {
+  .infoDetails h2,
+  .home-about-text h2 {
     font-size: clamp(2.5rem, 7vw, 3rem);
   }
 
