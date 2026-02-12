@@ -103,6 +103,7 @@ export default function HomePage() {
             alt="coffee image"
             src={Coffee}
             fill
+            sizes="100vw"
           />
         </div>
 
@@ -130,6 +131,7 @@ export default function HomePage() {
             alt="coffee image"
             src={Food}
             fill
+            sizes="100vw"
           />
         </div>
 
@@ -157,6 +159,7 @@ export default function HomePage() {
             alt="coffee image"
             src={Bake}
             fill
+            sizes="100vw"
           />
         </div>
 
