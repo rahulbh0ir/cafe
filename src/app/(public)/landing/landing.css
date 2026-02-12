@@ -133,13 +133,13 @@ a {
   align-items: center;
 }
 
-.home-about-text h1 {
+.home-about-text h2 {
   font-family: var(--poiret);
   color: white;
   font-size: 100px;
 }
 
-.home-about-text h1 span {
+.home-about-text h2 span {
   color: #af8888;
   font-family: var(--poiret);
 }
@@ -229,13 +229,13 @@ a {
 }
 
 
-.infoDetails h1 {
+.infoDetails h2 {
   font-family: var(--poiret);
   font-size: 100px;
   color: #2f2a26;
 }
 
-.infoDetails h1 span {
+.infoDetails h2 span {
   font-family: var(--poiret);
   color: #af8888;
 }
@@ -258,7 +258,7 @@ a {
   direction: ltr;
 }
 
-.info.reverse .infoDetails h1,
+.info.reverse .infoDetails h2,
 .info.reverse .infoDetails p {
   color: white;
 }

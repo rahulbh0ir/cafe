@@ -47,7 +47,7 @@ export default function HomePage() {
 
       <section className="home-about">
         <div className="home-about-text">
-          <h1>Since <span>2026</span></h1>
+          <h2>Since <span>2026</span></h2>
           <p>
             We began Bean There in 2026 with one heartfelt goal: <Bold>to create a space that feels like a second home for the people of Lucknow.
               Looking back</Bold>, it still feels surreal to see how far we’ve come—from becoming a beloved landmark in Lucknow
@@ -108,7 +108,7 @@ export default function HomePage() {
         </div>
 
         <div className="infoDetails">
-          <h1>Our <span>Coffee</span></h1>
+          <h2>Our <span>Coffee</span></h2>
 
           <p>
             We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
@@ -136,7 +136,7 @@ export default function HomePage() {
         </div>
 
         <div className="infoDetails reverse">
-          <h1>Our <span>Food</span></h1>
+          <h2>Our <span>Food</span></h2>
 
           <p>
             Our kitchen brings together familiar favorites and creative house specials.
@@ -164,7 +164,7 @@ export default function HomePage() {
         </div>
 
         <div className="infoDetails">
-          <h1>Our <span>Bakes</span></h1>
+          <h2>Our <span>Bakes</span></h2>
 
           <p>
             We serve a thoughtfully developed 100% Arabica blend, custom-roasted in collaboration with Bili Hu Coffee Roasters.
