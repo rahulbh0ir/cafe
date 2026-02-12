@@ -47,17 +47,17 @@ export default function HomePage() {
 
       <section className="home-about">
         <div className="home-about-text">
-          <h2>Since <span>2026</span></h2>
+          <h2>Crafted in <span>2026</span></h2>
           <p>
-            We began Bean There in 2026 with one heartfelt goal: <Bold>to create a space that feels like a second home for the people of Lucknow.
-              Looking back</Bold>, it still feels surreal to see how far we’ve come—from becoming a beloved landmark in Lucknow
-            to being welcomed with open arms by the people of Lucknow.
+            Bean There was born in 2026 with one simple but heartfelt vision —
+            <Bold> to create a space in Lucknow that feels warm, welcoming, and truly different.</Bold>
+            We may be new, but every detail has been thoughtfully crafted — from the aroma of our coffee
+            to the comfort of every corner.
           </p>
           <p>
             <Bold>
-              A restaurant is never built alone,
-              and none of this would be possible without the passion, dedication, and love of our incredible team.
-            </Bold>
+              We’re not just opening doors — we’re building a community</Bold>,
+            one conversation, one cup, and one memory at a time.
           </p>
           <div className="about-button">
             <Link href="/story">

@@ -40,12 +40,28 @@ export default function MenuPage() {
         <div className="menu-content">
           <h2>Coffee & Drinks</h2>
           <ul>
-            <li>Signature Cappuccino</li>
-            <li>Classic Americano</li>
-            <li>Cold Brew Coffee</li>
-            <li>Chocolate Mocha</li>
-            <li>Fresh Iced Lemonade</li>
+            <li>
+              <span>Signature Cappuccino</span>
+              <span className="price">₹180</span>
+            </li>
+            <li>
+              <span>Classic Americano</span>
+              <span className="price">₹150</span>
+            </li>
+            <li>
+              <span>Cold Brew Coffee</span>
+              <span className="price">₹200</span>
+            </li>
+            <li>
+              <span>Chocolate Mocha</span>
+              <span className="price">₹220</span>
+            </li>
+            <li>
+              <span>Fresh Iced Lemonade</span>
+              <span className="price">₹140</span>
+            </li>
           </ul>
+
         </div>
       </section>
 
@@ -62,12 +78,29 @@ export default function MenuPage() {
         <div className="menu-content">
           <h2>Fresh Food & Bakes</h2>
           <ul>
-            <li>Butter Croissants</li>
-            <li>Garlic Bread</li>
-            <li>Cheese Sandwich</li>
-            <li>Chocolate Muffins</li>
-            <li>Freshly Baked Cookies</li>
+            <li>
+              <span>Butter Croissants</span>
+              <span className="price">₹120</span>
+            </li>
+            <li>
+              <span>Garlic Bread</span>
+              <span className="price">₹100</span>
+            </li>
+            <li>
+              <span>Cheese Sandwich</span>
+              <span className="price">₹150</span>
+            </li>
+            <li>
+              <span>Chocolate Muffins</span>
+              <span className="price">₹80</span>
+            </li>
+            <li>
+              <span>Freshly Baked Cookies</span>
+              <span className="price">₹60</span>
+            </li>
           </ul>
+
+
         </div>
       </section>
 
@@ -84,12 +117,29 @@ export default function MenuPage() {
         <div className="menu-content">
           <h2>Pizza & Specials</h2>
           <ul>
-            <li>Classic Margherita</li>
-            <li>Farm Fresh Veggie Pizza</li>
-            <li>Cheese Burst Pizza</li>
-            <li>Herb Garlic Flatbread</li>
-            <li>Chef’s Daily Special</li>
+            <li>
+              <span>Classic Margherita</span>
+              <span className="price">₹200</span>
+            </li>
+            <li>
+              <span>Farm Fresh Veggie Pizza</span>
+              <span className="price">₹180</span>
+            </li>
+            <li>
+              <span>Cheese Burst Pizza</span>
+              <span className="price">₹250</span>
+            </li>
+            <li>
+              <span>Herb Garlic Flatbread</span>
+              <span className="price">₹130</span>
+            </li>
+            <li>
+              <span>Chef’s Daily Special</span>
+              <span className="price">₹260</span>
+            </li>
           </ul>
+
+
         </div>
       </section>
     </main>

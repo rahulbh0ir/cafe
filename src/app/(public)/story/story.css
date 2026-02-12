@@ -152,14 +152,17 @@
   .story-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   .story-content h2 {
+    width: 100%;
+    text-align: center;
     font-size: 1.8rem;
   }
 
   .story-content p {
+    text-align: start;
     font-size: 1rem;
     max-width: 100%;
   }
