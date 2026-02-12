@@ -3,9 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../../assets/images/logo4.png";
 import { usePathname } from "next/navigation";
 import "./header.css";
+
+import Logo from "../../../../public/header/logo4.png";
 
 interface LinkType {
   id: number,
