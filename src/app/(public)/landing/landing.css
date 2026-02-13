@@ -246,7 +246,8 @@ a {
 
 
 .info.reverse {
-   background-color: var(--surface-dark);
+  direction: rtl;
+  background-color: var(--surface-dark);
 }
 
 .info.reverse .infoDetails {
