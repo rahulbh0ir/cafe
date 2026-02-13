@@ -26,24 +26,24 @@ export default function Header() {
   const [sticky, setSticky] = useState(false);
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setSticky(true);
-      }
-      else {
-        setSticky(false)
-      }
-    }
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 200) {
+  //       setSticky(true);
+  //     }
+  //     else {
+  //       setSticky(false)
+  //     }
+  //   }
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll)
+  //   }
 
-  }, []);
+  // }, []);
 
 
 

@@ -69,8 +69,8 @@
 
 .story-section.reverse {
   direction: rtl;
-  color: var(--brand-cream);
-  background-color: var(--surface-dark);
+  /* color: var(--brand-cream); */
+  /* background-color: var(--surface-dark); */
 }
 
 .story-section.reverse .story-content {

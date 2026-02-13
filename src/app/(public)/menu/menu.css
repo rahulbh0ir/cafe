@@ -59,8 +59,8 @@
 
 .menu-section.reverse {
   direction: rtl;
-  color: var(--brand-cream);
-  background-color: var(--surface-dark);
+  /* color: var(--brand-cream); */
+  /* background-color: var(--surface-dark); */
 }
 
 .menu-section.reverse .menu-content {
