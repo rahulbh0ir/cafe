@@ -7,31 +7,28 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-
-  background-color: #f7efe7;
-  color: #2f2a26;
+  background-color: var(--surface-light);
+  color: var(--brand-espresso);
 }
 
 
 
 /* HERO */
 .book-hero {
-  /* padding: 10% 20%; */
   text-align: center;
 }
 
 .book-hero h1 {
-  color: white;
+  color: var(--brand-cream);
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
 }
 
 .book-hero p {
-  color: white;
+  color: var(--brand-cream);
   margin-top: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -47,7 +44,7 @@
   z-index: 1;
   max-width: 720px;
   margin: auto;
-  background: #ffffff;
+  background-color: var(--surface-light);
   padding: 4rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
@@ -93,23 +90,23 @@
 
 .form-field input {
   padding: 0.9rem 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   border: 1px solid #ddd;
   font-size: 1rem;
-  /* background: #fafafa; */
+  background-color: var(--brand-cream);
+
 }
 
 .form-field input:focus {
   outline: none;
-  border-color: #2f2a26;
-  background: #fff;
+  border-color: var(--brand-espresso);
 }
 
 .form-image {
   min-width: 400px;
   height: 420px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
 }
 
 .form-image img {
@@ -124,10 +121,9 @@
   margin-top: 1.5rem;
   padding: 1rem;
   margin-left: 30%;
-  border: 1px solid black;
-  /* background: #875454;  */
-  background: rgb(195, 115, 115);
-  color: white;
+  border: 1px solid var(--text-dark);
+  background: #c37373;
+  color: var(--text-light);
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -136,10 +132,14 @@
 .submit-btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
-  /* background: #984f4f;  */
   background: #954747;
-  color: white;
+  color: var(--text-light);
 }
+
+
+
+
+
 
 
 /* Mobile Responsive */

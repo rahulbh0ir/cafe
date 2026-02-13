@@ -1,6 +1,6 @@
 .menu-page {
-  background-color: #f7efe7;
-  color: #2f2a26;
+  background-color: var(--surface-light);
+  color: var(--brand-espresso);
 }
 
 /* HERO */
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: var(--text-light);
 }
 
 .menu-text h1 {
@@ -32,16 +32,12 @@
   font-size: 6rem;
   letter-spacing: 0.15rem;
   text-shadow: 4px 4px 5px rgb(60, 59, 59);
-
 }
 
 .menu-text p {
-  /* font-family: var(--lavish); */
-  /* font-size: 3rem; */
   font-size: 1.2rem;
   margin-top: 1rem;
   text-shadow: 4px 4px 5px rgb(60, 59, 59);
-
 }
 
 /* MENU SECTIONS */
@@ -63,8 +59,8 @@
 
 .menu-section.reverse {
   direction: rtl;
-  color: #f7efe7;
-  background-color: #2f2a26;
+  color: var(--brand-cream);
+  background-color: var(--surface-dark);
 }
 
 .menu-section.reverse .menu-content {
@@ -80,7 +76,7 @@
   position: relative;
   height: 420px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
 }
 
 .menu-image img {
@@ -111,7 +107,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  /* controls spacing between name & price */
   font-size: 1.1rem;
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -124,15 +119,6 @@
 }
 
 
-/* .menu-content .price {
-  min-width: 60px;
-  text-align: right;
-} */
-
-
-/* .menu-section.reverse .menu-content li {
-  border-bottom: 1px solid rgba(249, 249, 249, 0.323);
-} */
 
 
 

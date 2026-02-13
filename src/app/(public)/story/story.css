@@ -1,6 +1,6 @@
 .story-page {
-  background-color: #f7efe7;
-  color: #2f2a26;
+  background-color: var(--surface-light);
+  color: var(--brand-espresso);
 }
 
 
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--text-light);
   text-align: center;
 }
 
@@ -69,8 +69,8 @@
 
 .story-section.reverse {
   direction: rtl;
-  color: #f7efe7;
-  background-color: #2f2a26;
+  color: var(--brand-cream);
+  background-color: var(--surface-dark);
 }
 
 .story-section.reverse .story-content {
@@ -81,7 +81,7 @@
   position: relative;
   height: 420px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
 }
 
 .story-image img {
@@ -93,8 +93,6 @@
 .story-section.visible .story-image img {
   transform: scale(1);
 }
-
-
 
 
 
@@ -112,6 +110,17 @@
   line-height: 1.8;
   max-width: 520px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

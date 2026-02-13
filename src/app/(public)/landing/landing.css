@@ -2,7 +2,7 @@
   max-width: fit-content;
   margin-inline: auto;
   max-width: 2000px;
-  color: #2f2a26;
+  color: var(--brand-espresso);
 }
 
 a {
@@ -29,7 +29,7 @@ a {
 
 
 .hero-title {
-  color: white;
+  color: var(--text-light);
   position: relative;
   z-index: 10;
   height: 100vh;
@@ -46,15 +46,12 @@ a {
 }
 
 .hero-title h1:nth-of-type(2) {
-  /* font-size: 300px; */
   font-size: clamp(6rem, 20vw, 300px);
   font-weight: lighter;
   position: absolute;
   z-index: -1;
-  color: #af8888;
+  color: var(--brand-rose);
   font-family: var(--sacramento);
-  /* color: #954747; */
-  /* color: #984f4f;  */
 }
 
 
@@ -85,20 +82,20 @@ a {
 
 .btn.primary {
   background: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
 }
 
 .btn.secondary {
   background-color: transparent;
-  border: 1px solid #2f2a26;
-  color: #2f2a26;
+  border: 1px solid var(--brand-espresso);
+  color: var(--brand-espresso);
 }
 
 .btn:hover {
   background: #954747;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
   transform: translateY(-2px);
   opacity: 0.9;
 }
@@ -125,7 +122,7 @@ a {
 /* ABOUT */
 .home-about {
   height: max-content;
-  background-color: rgb(49, 46, 46);
+  background-color: var(--surface-dark);
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 6rem;
@@ -135,23 +132,23 @@ a {
 
 .home-about-text h2 {
   font-family: var(--poiret);
-  color: white;
+  color: var(--text-light);
   font-size: 90px;
 }
 
 .home-about-text h2 span {
-  color: #af8888;
+  color: var(--brand-rose);
   font-family: var(--poiret);
 }
 
 .home-about-text p {
   padding: 2rem 0;
-  color: white;
+  color: var(--text-light);
   line-height: 1.8;
 }
 
 .home-link {
-  color: white;
+  color: var(--text-light);
   margin-top: 1.5rem;
   display: inline-block;
   font-weight: 600;
@@ -159,7 +156,7 @@ a {
 
 
 .home-about-image img {
-  border-radius: 16px;
+  border-radius: var(--radius-md);
 }
 
 .about-button {
@@ -201,8 +198,8 @@ a {
 
 .info {
   height: 100vh;
-  background-color: rgb(105, 102, 102);
-  background-color: #f7efe7;
+  /* background-color: var(--brand-grey); */
+  background-color: var(--surface-light);
   height: max-content;
   padding: 10rem 2rem;
   display: grid;
@@ -219,7 +216,7 @@ a {
 
 .infoImg img {
   height: 500px;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   object-fit: cover;
   transition: transform 1.5s ease;
 }
@@ -232,41 +229,40 @@ a {
 .infoDetails h2 {
   font-family: var(--poiret);
   font-size: 100px;
-  color: #2f2a26;
+  color: var(--brand-espresso);
 }
 
 .infoDetails h2 span {
   font-family: var(--poiret);
-  color: #af8888;
+  color: var(--brand-rose);
 }
 
 
 .infoDetails p {
   padding: 2rem 0;
-  color: #2f2a26;
+  color: var(--brand-espresso);
   line-height: 1.8;
 }
 
 
 .info.reverse {
-  direction: rtl;
-  background-color: rgb(49, 46, 46);
+   background-color: var(--surface-dark);
 }
 
 .info.reverse .infoDetails {
-  color: #2f2a26;
   direction: ltr;
 }
 
 .info.reverse .infoDetails h2,
 .info.reverse .infoDetails p {
-  color: white;
+  color: var(--text-light);
+  /* color: var(--brand-espresso); */
 }
 
 
 .infoButton {
   padding-bottom: 3rem;
-  background-color: #f7efe7;
+  background-color: var(--surface-light);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -276,14 +272,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 5px; */
 }
-
-/* .infoButton button span {
-  padding: 5px 0 0 5px;
-} */
-
-
 
 
 
