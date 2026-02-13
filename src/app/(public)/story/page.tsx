@@ -41,7 +41,7 @@ export default () => {
             />
           </div>
           <div className="story-content">
-            <h2>Where It All Began</h2>
+            <h2>Where It All <span>Began</span></h2>
             <p>
               Bean There started as a small dream — to create a place where people
               could slow down, connect, and enjoy honest food and coffee made with
@@ -66,7 +66,7 @@ export default () => {
             />
           </div>
           <div className="story-content">
-            <h2>Crafted With Heart</h2>
+            <h2>Crafted With <span>Heart</span></h2>
             <p>
               Every cup we brew and every dish we serve is thoughtfully prepared.
               We believe ingredients matter, time matters, and the people we serve
@@ -91,7 +91,7 @@ export default () => {
             />
           </div>
           <div className="story-content">
-            <h2>More Than a Café</h2>
+            <h2>More Than a <span>Café</span></h2>
             <p>
               Bean There is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and
               soft lighting create a space where time seems to slow down.

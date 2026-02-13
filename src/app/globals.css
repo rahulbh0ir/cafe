@@ -12,7 +12,7 @@ html {
   /* font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif; */
 }
 
-body{
+body {
   background-color: #f7efe7;
 }
 
@@ -22,17 +22,17 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #af8888; 
+  background: #af8888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #984f4f; 
+  background: #984f4f;
 }
 
 
@@ -43,7 +43,7 @@ body{
      BRAND COLORS
   ========================== */
 
-  --brand-cream: #f7efe7; 
+  --brand-cream: #f7efe7;
   --brand-espresso: #2f2a26;
   --brand-rose: #af8888;
   --brand-rose-dark: #954747;
@@ -53,7 +53,7 @@ body{
 
   /* Dark section background */
   --brand-dark: rgb(49, 46, 46);
-  --brand-grey : #696666;
+  --brand-grey: #696666;
 
   /* =========================
      TEXT COLORS
@@ -99,11 +99,34 @@ body{
      LAYOUT
   ========================== */
 
-  --section-padding-desktop: 120px 100px;
-  --section-padding-mobile: 60px 25px;
+
+
+  --section-padding-desktop: 10rem 2rem;
+  --section-padding-tablet: 6rem 2rem;
+  --section-padding-mobile: 5rem 0.5rem;
+  --section-gap: 4rem;
+
+
+
+
+
+  
+
+  --container-max: 1400px;
+  --container-padding: 2rem;
+
+  /* ===== SECTION SPACING ===== */
+  --section-y-desktop: 10rem;
+  --section-y-tablet: 7rem;
+  --section-y-mobile: 5rem;
+
+  /* ===== GRID GAP ===== */
+  --grid-gap-large: 4rem;
+  --grid-gap-medium: 2.5rem;
+  --grid-gap-small: 1.5rem;
+
+  /* ===== IMAGE HEIGHTS ===== */
+  --image-height-desktop: 500px;
+  --image-height-mobile: 260px;
 
 }
-
-
-
-

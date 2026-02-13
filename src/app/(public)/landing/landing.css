@@ -10,7 +10,6 @@ a {
 }
 
 
-
 /* HERO */
 .home-hero {
   min-height: 100svh;
@@ -320,6 +319,7 @@ a {
 
   .infoDetails p,
   .home-about-text p {
+    /* font-size: 14px; */
     font-size: small;
     padding: 1rem 0;
   }
