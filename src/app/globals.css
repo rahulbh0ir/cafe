@@ -84,8 +84,9 @@ body {
      SHADOWS
   ========================== */
 
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.15);
-
+  --shadow-card: 0 20px 40px #00000026;
+  
+  --text-shadow: 4px 4px 5px rgb(60, 59, 59);
 
   /* =========================
      TRANSITIONS

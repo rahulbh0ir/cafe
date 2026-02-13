@@ -124,9 +124,13 @@ a {
   background-color: var(--surface-dark);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 6rem;
-  padding: 6rem 2rem;
+  /* padding: 6rem 2rem; */
+  padding: var(--section-padding-desktop);
   align-items: center;
+}
+
+.home-about-text {
+  padding: 2rem;
 }
 
 .home-about-text h2 {
@@ -197,10 +201,10 @@ a {
 
 .info {
   height: 100vh;
-  /* background-color: var(--brand-grey); */
   background-color: var(--surface-light);
   height: max-content;
-  padding: 10rem 2rem;
+  /* padding: 10rem 2rem; */
+  padding: var(--section-padding-desktop);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -290,10 +294,12 @@ a {
 
 @media (max-width: 768px) {
 
-  .home-about {
+  .home-about,
+  .info {
     grid-template-columns: 1fr;
-    gap: 3rem;
     padding: 3rem 0.5rem;
+    padding: var(--section-padding-mobile);
+
   }
 
   .coffeeFront {
@@ -302,11 +308,6 @@ a {
     bottom: 0;
     width: 100%;
     max-width: 300px;
-  }
-
-  .info {
-    grid-template-columns: 1fr;
-    padding: 5rem 0.5rem;
   }
 
   .infoImg {
