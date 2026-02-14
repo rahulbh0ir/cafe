@@ -38,7 +38,7 @@ export default function MenuPage() {
           />
         </div>
         <div className="menu-content">
-          <h2>Coffee & Drinks</h2>
+          <h2>Coffee & <span>Drinks</span></h2>
           <ul>
             <li>
               <span>Signature Cappuccino</span>
@@ -76,7 +76,7 @@ export default function MenuPage() {
           />
         </div>
         <div className="menu-content">
-          <h2>Fresh Food <span></span>& Bakes</h2>
+          <h2>Fresh Food & <span>Bakes</span></h2>
           <ul>
             <li>
               <span>Butter Croissants</span>
@@ -115,7 +115,7 @@ export default function MenuPage() {
           />
         </div>
         <div className="menu-content">
-          <h2>Pizza & Specials</h2>
+          <h2>Pizza & <span>Specials</span></h2>
           <ul>
             <li>
               <span>Classic Margherita</span>
