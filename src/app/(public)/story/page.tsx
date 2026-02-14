@@ -36,7 +36,6 @@ export default () => {
             <Image
               src={Story1}
               alt="story-1"
-              priority
               fill
             />
           </div>
@@ -61,7 +60,6 @@ export default () => {
             <Image
               src={Story2}
               alt="story-2"
-              priority
               fill
             />
           </div>
@@ -86,7 +84,6 @@ export default () => {
             <Image
               src={Story3}
               alt="story-3"
-              priority
               fill
             />
           </div>

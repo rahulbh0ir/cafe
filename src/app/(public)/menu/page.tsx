@@ -33,7 +33,6 @@ export default function MenuPage() {
           <Image
             src={menuDrinks}
             alt="Menu Drinks"
-            priority
             fill
           />
         </div>
@@ -71,7 +70,6 @@ export default function MenuPage() {
           <Image
             src={menuFood}
             alt=""
-            priority
             fill
           />
         </div>
@@ -110,7 +108,6 @@ export default function MenuPage() {
           <Image
             src={menuPizza}
             alt=""
-            priority
             fill
           />
         </div>
