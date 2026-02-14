@@ -39,7 +39,8 @@ a {
 }
 
 .hero-title h1 {
-  font-size: clamp(3rem, 8vw, 100px);
+  /* font-size: clamp(4rem, 8vw, 100px); */
+  font-size: var(--font-size-lg);
   margin: 10px;
   font-family: var(--poiret);
 }

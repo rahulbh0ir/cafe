@@ -63,6 +63,8 @@ body {
   --text-dark: #000000;
 
 
+  --font-size-lg : clamp(4rem, 8vw, 100px);
+
   /* =========================
      SURFACE COLORS
   ========================== */
