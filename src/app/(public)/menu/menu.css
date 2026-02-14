@@ -81,9 +81,14 @@
   direction: ltr;
 }
 
-.menu-section.reverse .menu-content li {
+
+
+/* .menu-section.reverse .menu-content li {
   border-bottom: 1px solid rgba(249, 249, 249, 0.323);
-}
+} */
+
+
+
 
 /* IMAGE */
 .menu-image {
@@ -123,8 +128,10 @@
 }
 
 .menu-content ul {
-  list-style: none;
-  padding: 0;
+  width: 100%;
+  padding: 1rem 0;
+  color: var(--brand-espresso);
+  line-height: 1.8;
 }
 
 .menu-content li {
@@ -135,7 +142,7 @@
   font-size: 1.1rem;
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .menu-content .price {
@@ -190,7 +197,6 @@
   /* MENU SECTIONS */
   .menu-section {
     grid-template-columns: 1fr;
-    /* stack */
     padding: var(--section-padding-mobile);
     gap: 2rem;
     text-align: center;
@@ -213,9 +219,14 @@
     text-align: center;
   }
 
+  .menu-content ul {
+    width: 100%;
+  }
+
   .menu-content li {
-    font-size: 1rem;
-    max-width: 100%;
+    text-align: start;
+    font-size: small;
+    padding: 1rem 0;
   }
 
 
