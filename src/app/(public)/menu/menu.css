@@ -163,6 +163,96 @@
 }
 
 
+/* weely-section */
+
+
+.weekly-section {
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.weekly-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.weekly-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.weekly-header h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 8px;
+}
+
+.weekly-header p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* ===== LIST ===== */
+
+.weekly-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.weekly-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  align-items: center;
+}
+
+.weekly-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.weekly-name {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.weekly-price {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ===== META ===== */
+
+.weekly-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  border: 1px solid currentColor;
+}
+
+.badge.popular {
+  color: #c67c4e;
+}
+
+.badge.veg {
+  color: #2e7d32;
+}
+
+.prep-time {
+  opacity: 0.6;
+}
 
 
 
@@ -236,5 +326,21 @@
   .menu-image {
     /* height: 260px; */
     height: var(--image-height-mobile);
+  }
+
+
+
+
+
+  .weekly-item {
+    padding: 14px 0;
+  }
+
+  .weekly-name {
+    font-size: 14px;
+  }
+
+  .weekly-price {
+    font-size: 14px;
   }
 }

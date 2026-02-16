@@ -1,21 +1,27 @@
+export type MenuItem = {
+  id: string;
+  name: string;
+  price: number;
+  size?: string;
+  category?: string;
+  ingredients: string[];
+  description: string;
+  prepTime: string;
+  isPopular: boolean;
+  isVeg: boolean;
+  calories: number;
+};
 
-// export interface Property {
-//   id : string
-//   name : string
-//   price : number
-//   category : string
-//   ingredients : string[]
-//   description : string
-//   prepTime : string
-//   isPopular : boolean
-//   isVeg : boolean
-//   calories : number
-// }
+export type MenuData = {
+  drinks: MenuItem[];
+  food: MenuItem[];
+  pizza: MenuItem[];
+};
 
 
 
 
-export const menuData = {
+export const menuData: MenuData = {
   drinks: [
     {
       id: "drink-1",

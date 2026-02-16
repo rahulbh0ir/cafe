@@ -6,6 +6,7 @@ import menuDrinks from "../../../../public/menu/menu-1.jpg";
 import menuFood from "../../../../public/menu/menu-2.jpg";
 import menuPizza from "../../../../public/menu/menu-3.jpg";
 import { menuData } from "@/data/menu";
+import Weekly from "./weekly";
 
 export default function MenuPage() {
   return (
@@ -28,6 +29,11 @@ export default function MenuPage() {
         </div>
       </section>
 
+
+
+
+
+
       {/* SECTION 1 */}
       <section className="menu-section reveal">
         <div className="menu-image">
@@ -39,14 +45,14 @@ export default function MenuPage() {
         </div>
         <div className="menu-content">
           <h2>Coffee & <span>Drinks</span></h2>
-          {menuData.drinks.map(item => (
-            <ul key={item.id}>
-              <li>
+          <ul>
+            {menuData.drinks.map(item => (
+              <li key={item.id}>
                 <span>{item.name}</span>
-                <span className="price">₹ {item.price}</span>
+                <span>₹ {item.price}</span>
               </li>
-            </ul>
-          ))}
+            ))} 
+          </ul>
         </div>
       </section>
 
@@ -61,17 +67,14 @@ export default function MenuPage() {
         </div>
         <div className="menu-content">
           <h2>Fresh Food & <span>Bakes</span></h2>
-          
-          {menuData.food.map(item => (
-            <ul key={item.id}>
-              <li>
+          <ul>
+            {menuData.food.map(item => (
+              <li key={item.id}>
                 <span>{item.name}</span>
-                <span className="price">₹ {item.price}</span>
+                <span>₹ {item.price}</span>
               </li>
-            </ul>
-          ))}
-
-
+            ))}  
+          </ul>    
         </div>
       </section>
 
@@ -86,17 +89,22 @@ export default function MenuPage() {
         </div>
         <div className="menu-content">
           <h2>Pizza & <span>Specials</span></h2>
-          {menuData.pizza.map(item => (
-            <ul key={item.id}>
-              <li>
+          <ul>
+            {menuData.pizza.map(item => (
+              <li key={item.id}>
                 <span>{item.name}</span>
-                <span className="price">₹ {item.price}</span>
+                <span>₹ {item.price}</span>
               </li>
-            </ul>
-          ))}
-
+            ))}
+          </ul>
         </div>
       </section>
+
+
+
+     {/* Weekly Specials        */}
+       <Weekly />     
+
     </main>
   );
 }
