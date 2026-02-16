@@ -49,7 +49,7 @@ export default function HomePage() {
         <div className="home-about-text">
           <h2>Crafted in <span>2026</span></h2>
           <p>
-            Bean There was born in 2026 with one simple but heartfelt vision —
+            Long Pour was born in 2026 with one simple but heartfelt vision —
             <Bold> to create a space in Lucknow that feels warm, welcoming, and truly different.</Bold>
             We may be new, but every detail has been thoughtfully crafted — from the aroma of our coffee
             to the comfort of every corner.

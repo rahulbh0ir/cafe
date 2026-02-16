@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./header.css";
-import Logo from "../../../../public/header/logo4.png";
+// import Logo from "../../../../public/header/logo4.png";
+import Logo from "../../../../public/header/hello.png";
 
 interface LinkType {
   id: number,
@@ -58,6 +59,7 @@ export default function Header() {
             width={180}
             height={100}
             className="logo-img"
+            onClick={() => setMenuOpen(false) }
           />
         </Link>
       </div>
