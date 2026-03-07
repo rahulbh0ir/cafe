@@ -3,7 +3,6 @@ import Animation from "@/components/effects/animations";
 import "./landing.css";
 import Bold from "@/components/ui/bold";
 import Arrow from "../../../../public/home/arrow.png";
-
 import Back from "../../../../public/home/backColor.jpg";
 import Front from "../../../../public/home/frontColor.jpg";
 import Coffee from "../../../../public/home/coffeeColor.jpg";
