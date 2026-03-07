@@ -368,7 +368,7 @@ a {
 
   .infoDetails h2,
   .home-about-text h2 {
-    font-size: clamp(2.5rem, 7vw, 3rem);
+    font-size: clamp(3rem, 7vw, 3rem);
   }
 
   .btn {
