@@ -264,7 +264,7 @@ a {
 
 
 .infoDetails h2 {
-  font-size: 100px;
+  font-size: var(--font-size-lg);
   font-family: var(--poiret);
   color: var(--brand-espresso);
 }
