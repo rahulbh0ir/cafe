@@ -231,6 +231,11 @@ a {
 
 
 
+
+
+/* info section */
+
+
 .info {
   height: max-content;
   display: grid;
@@ -264,7 +269,8 @@ a {
 
 
 .infoDetails h2 {
-  font-size: var(--font-size-lg);
+  /* font-size: var(--font-size-md); */
+  font-size: 80px;
   font-family: var(--poiret);
   color: var(--brand-espresso);
 }
