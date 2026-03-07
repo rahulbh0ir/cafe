@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
 }
 
+img, video {
+  will-change: transform;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

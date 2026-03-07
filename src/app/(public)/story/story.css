@@ -84,8 +84,8 @@
 .story-image {
   position: relative;
   height: var(--image-height-desktop);
-  overflow: hidden;
   border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 .story-image img {
@@ -110,6 +110,7 @@
   color: var(--brand-espresso);
   margin-bottom: 1rem;
   font-size: 70px;
+  /* font-size: var(--font-size-lg); */
 }
 
 .story-content h2 span {
@@ -118,7 +119,7 @@
 }
 
 .story-content p {
-  padding: 1rem 0;
+  padding: 2rem 0;
   color: var(--brand-espresso);
   line-height: 1.8;
 }
