@@ -50,16 +50,16 @@ export default function HomePage() {
 
         <div className="about-container">
 
-          <div className="about-images">
+          <div className="about-images reveal">
 
             <Image
-              src={Front}
+              src={Back}
               className="img-main"
               alt="Coffee cup"
             />
 
             <Image
-              src={Back}
+              src={Front}
               className="img-small"
               alt="Coffee beans"
             />
@@ -77,18 +77,18 @@ export default function HomePage() {
               since 2026
             </h2>
 
-            <div className="about-divider"></div>
+            <div className="divider"></div>
 
             <p>
-              Long Pour began with a simple idea — to create a warm place where
+              <Bold>Long Pour</Bold> began with a simple idea — to create a warm place where
               coffee, conversation, and comfort come together. Every cup we serve
               is brewed with care, using beans sourced from passionate growers
               around the world.
             </p>
 
-            <a href="#" className="about-btn">
+            <Link href="/story" className="about-btn">
               Read our story →
-            </a>
+            </Link>
 
           </div>
 
@@ -114,7 +114,7 @@ export default function HomePage() {
               Carefully sourced <span>coffee beans</span>
             </h2>
 
-            <div className="feature-divider"></div>
+            <div className="divider"></div>
 
             <p>
               Our coffee is sourced from passionate growers and roasted
@@ -122,12 +122,12 @@ export default function HomePage() {
               is crafted to deliver warmth and character.
             </p>
 
-            <a href="#" className="feature-btn">
+            <Link href="/menu" className="feature-btn">
               Explore coffee →
-            </a>
+            </Link>
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image reveal">
 
             <Image
               src={Coffee}
@@ -156,7 +156,7 @@ export default function HomePage() {
               Freshly prepared <br/><span>every day</span>
             </h2>
 
-            <div className="feature-divider"></div>
+            <div className="divider"></div>
 
             <p>
               From warm pastries to hearty meals, our food is crafted
@@ -164,12 +164,12 @@ export default function HomePage() {
               experience perfectly.
             </p>
 
-            <a href="#" className="feature-btn">
-              See menu →
-            </a>
+            <Link href="/menu" className="feature-btn">
+              Explore Food →
+            </Link>
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image reveal">
             <Image
               src={Food}
               alt="food"
@@ -199,7 +199,7 @@ export default function HomePage() {
               Freshly baked <br/> <span>every morning</span>
             </h2>
 
-            <div className="feature-divider"></div>
+            <div className="divider"></div>
 
             <p>
               From buttery croissants to rich chocolate cakes, our bakery
@@ -207,13 +207,13 @@ export default function HomePage() {
               Perfect companions to your favorite cup of coffee.
             </p>
 
-            <a href="#" className="feature-btn">
-              Discover bakes →
-            </a>
+            <Link href="/menu" className="feature-btn">
+              Discover Bakes →
+            </Link>
 
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image reveal">
             <Image 
               src= {Bake} 
               alt="fresh bakery items" 

@@ -6,6 +6,7 @@ export default function ScrollSystem() {
   useEffect(() => {
 
     const elements = document.querySelectorAll(".reveal");
+    const divider = document.querySelectorAll(".divider");
 
     const revealObserver = new IntersectionObserver(
       (entries, observerInstance) => {
@@ -20,6 +21,7 @@ export default function ScrollSystem() {
     );
 
     elements.forEach((el) => revealObserver.observe(el));
+    divider.forEach((item) => revealObserver.observe(item))
 
     return () => {
       revealObserver.disconnect();
