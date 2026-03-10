@@ -239,24 +239,28 @@ a {
   /* color: #555; */
   color: white;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 
 
 .about-btn {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  /* color: #000; */
-  color: white;
-  border-bottom: 2px solid #b36b5e;
-  padding-bottom: 5px;
-  transition: 0.3s;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 28px;
+  border:2px solid var(--brand-rose);
+  /* border-radius:40px; */
+  font-size:15px;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:white;
+  transition:all 0.3s ease;
 }
 
-.about-btn:hover {
-  letter-spacing: 1px;
+.about-btn:hover{
+  background:var(--brand-rose);
+  color:white;
 }
 
 
@@ -327,21 +331,29 @@ a {
   line-height: 1.7;
   color: #555;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.feature-btn {
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
-  border-bottom: 2px solid #b36b5e;
-  padding-bottom: 5px;
-  transition: 0.3s;
+
+.feature-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 28px;
+  border:2px solid var(--brand-rose);
+  /* border-radius:40px; */
+  font-size:15px;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:var(--brand-espresso);
+  transition:all 0.3s ease;
 }
 
-.feature-btn:hover {
-  letter-spacing: 1px;
+.feature-btn:hover{
+  background:var(--brand-rose);
+  color:white;
 }
+
 
 
 
@@ -392,7 +404,6 @@ a {
   .about-container {
     grid-template-columns: 1fr;
     gap: 50px;
-    /* text-align: center; */
   }
 
   .img-small {
@@ -405,7 +416,6 @@ a {
   }
 
   .about-content p {
-    margin: auto;
     font-size: small;
   }
 
