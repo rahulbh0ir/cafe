@@ -1,6 +1,6 @@
+import "./landing.css";
 import Image from "next/image";
 import Animation from "@/components/effects/animations";
-import "./landing.css";
 import Bold from "@/components/ui/bold";
 import Arrow from "../../../../public/home/arrow.png";
 import Back from "../../../../public/home/backColor.jpg";
