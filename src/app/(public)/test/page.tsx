@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Animation from "@/components/effects/animations";
 import "./test.css";
 import Bold from "@/components/ui/bold";
@@ -6,9 +7,15 @@ import Arrow from "../../../../public/home/arrow.png";
 import Back from "../../../../public/home/backColor.jpg";
 import Front from "../../../../public/home/frontColor.jpg";
 import Coffee from "../../../../public/home/coffeeColor.jpg";
-import Food from "../../../../public/home/foodColor.jpg"
-import Bake from "../../../../public/home/bakeColor.jpg"
-import Link from "next/link";
+import Food from "../../../../public/home/foodColor.jpg";
+import Bake from "../../../../public/home/bakeColor.jpg";
+import Interior from "../../../../public/home/mainInterior.jpg";
+import Int1 from "../../../../public/home/int1.jpg";
+import Int2 from "../../../../public/home/int2.jpg";
+import Int3 from "../../../../public/home/int3.jpg";
+import Int4 from "../../../../public/home/int4.jpg";
+
+
 
 export default function HomePage() {
   return (
@@ -99,7 +106,7 @@ export default function HomePage() {
 
 
 
-     {/* Featured Section  */}
+      {/* Featured Section  */}
 
       {/* Section 1 */}
 
@@ -153,7 +160,7 @@ export default function HomePage() {
             <span className="feature-label">OUR FOOD</span>
 
             <h2>
-              Freshly prepared <br/><span>every day</span>
+              Freshly prepared <br /><span>every day</span>
             </h2>
 
             <div className="divider"></div>
@@ -196,7 +203,7 @@ export default function HomePage() {
             </span>
 
             <h2>
-              Freshly baked <br/> <span>every morning</span>
+              Freshly baked <br /> <span>every morning</span>
             </h2>
 
             <div className="divider"></div>
@@ -214,9 +221,9 @@ export default function HomePage() {
           </div>
 
           <div className="feature-image reveal">
-            <Image 
-              src= {Bake} 
-              alt="fresh bakery items" 
+            <Image
+              src={Bake}
+              alt="fresh bakery items"
             />
           </div>
 
@@ -224,14 +231,67 @@ export default function HomePage() {
 
       </section>
 
-
+      {/* 
       <section>
         <div className="infoButton">
           <Link href="/menu">
             <button className="btn secondary">See Menu</button>
           </Link>
         </div>
+      </section> */}
+
+      <section className="gallery">
+
+        <div className="gallery-container">
+
+          <div className="gallery-header">
+            <span className="gallery-label">ATMOSPHERE</span>
+
+            <h2>
+              A space made for <span>moments</span>
+            </h2>
+
+            <div className="divider"></div>
+          </div>
+
+
+          {/* MAIN FEATURE IMAGE */}
+          <div className="gallery-main reveal">
+            <Image
+              src={Interior}
+              alt="cafe interior"
+              fill
+              sizes="100vw"
+            />
+          </div>
+
+
+          {/* GRID IMAGES */}
+          <div className="gallery-grid">
+
+            <div className="gallery-item reveal">
+              <Image src={Int1} alt="coffee" fill />
+            </div>
+
+            <div className="gallery-item reveal">
+              <Image src={Int2} alt="latte art" fill />
+            </div>
+
+            <div className="gallery-item reveal">
+              <Image src={Int3} alt="interior" fill />
+            </div>
+
+            <div className="gallery-item reveal">
+              <Image src={Int4} alt="dessert" fill />
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
+
+
 
     </main >
   );
