@@ -255,7 +255,6 @@ export default function HomePage() {
           </div>
 
 
-          {/* MAIN FEATURE IMAGE */}
           <div className="gallery-main reveal">
             <Image
               src={Interior}
@@ -266,7 +265,6 @@ export default function HomePage() {
           </div>
 
 
-          {/* GRID IMAGES */}
           <div className="gallery-grid">
 
             <div className="gallery-item reveal">
