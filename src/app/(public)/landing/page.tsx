@@ -192,7 +192,7 @@ export default function HomePage() {
 
         <div className="gallery-container">
 
-          <div className="gallery-header">
+          <div className="gallery-headerr">
             <h2>
               Our <span>Atmosphere</span>
             </h2>

@@ -347,7 +347,7 @@ a {
 }
 
 
-.gallery-header {
+.gallery-headerr {
   margin-bottom: 80px;
 }
 
@@ -357,18 +357,18 @@ a {
   color: rgb(214, 214, 214);
 }
 
-.gallery-header h2 {
+.gallery-headerr h2 {
   font-size: 80px;
   font-family: var(--poiret);
   color: var(--text-light);
 }
 
-.gallery-header h2 span {
+.gallery-headerr h2 span {
   font-family: var(--poiret);
   color: var(--brand-rose);
 }
 
-.gallery-header p {
+.gallery-headerr p {
   padding: 2rem 0;
   color: var(--text-light);
   line-height: 1.8;
@@ -467,7 +467,7 @@ a {
 
   .infoDetails p,
   .home-about-text p,
-  .gallery-header p {
+  .gallery-headerr p {
     /* font-size: 14px; */
     font-size: small;
     padding: 1rem 0;
@@ -476,7 +476,7 @@ a {
 
   .infoDetails h2,
   .home-about-text h2,
-  .gallery-header h2 {
+  .gallery-headerr h2 {
     font-size: clamp(3rem, 7vw, 3rem);
   }
 
