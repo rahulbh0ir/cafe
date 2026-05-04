@@ -193,13 +193,14 @@ export default function HomePage() {
         <div className="gallery-container">
 
           <div className="gallery-header">
-            <span className="gallery-label">ATMOSPHERE</span>
-
             <h2>
-              A space made for <span>moments</span>
+              Our <span>Atmosphere</span>
             </h2>
-
-            <div className="divider"></div>
+            <p>Our gallery offers a visual journey into the heart of our space — where design meets experience.
+              Every frame highlights the ambiance, textures, and moments that define who we are.
+              Whether it’s the warm lighting, vibrant energy, or quiet corners,
+              these glimpses bring you closer to what makes our place unique.
+            </p>
           </div>
 
           <div className="carousel">

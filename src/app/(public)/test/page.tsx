@@ -232,14 +232,6 @@ export default function HomePage() {
 
       </section>
 
-      {/* 
-      <section>
-        <div className="infoButton">
-          <Link href="/menu">
-            <button className="btn secondary">See Menu</button>
-          </Link>
-        </div>
-      </section> */}
 
       <section className="gallery">
 
@@ -249,7 +241,7 @@ export default function HomePage() {
             <span className="gallery-label">ATMOSPHERE</span>
 
             <h2>
-              A space made for <span>moments</span>
+              A space made for <span><br />moments</span>
             </h2>
 
             <div className="divider"></div>
