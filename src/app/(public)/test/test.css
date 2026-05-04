@@ -484,6 +484,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* background-color: #312e2e; */
 }
 
 .map{
