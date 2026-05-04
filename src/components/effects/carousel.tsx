@@ -50,6 +50,10 @@ export default function Carousel() {
     const interval = setInterval( autoChange , 3000)
 
 
+    return () => {
+      clearInterval(interval);
+    }
+
   }, []);
 
   return (
