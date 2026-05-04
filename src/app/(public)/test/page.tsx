@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Animation from "@/components/effects/animations";
+import Carousel from "@/components/effects/carousel";
 import "./test.css";
 import Bold from "@/components/ui/bold";
 import Arrow from "../../../../public/home/arrow.png";
@@ -254,35 +255,8 @@ export default function HomePage() {
             <div className="divider"></div>
           </div>
 
-
-          <div className="gallery-main reveal">
-            <Image
-              src={Interior}
-              alt="cafe interior"
-              fill
-              sizes="100vw"
-            />
-          </div>
-
-
-          <div className="gallery-grid">
-
-            <div className="gallery-item reveal">
-              <Image src={Int1} alt="coffee" fill />
-            </div>
-
-            <div className="gallery-item reveal">
-              <Image src={Int2} alt="latte art" fill />
-            </div>
-
-            <div className="gallery-item reveal">
-              <Image src={Int3} alt="interior" fill />
-            </div>
-
-            <div className="gallery-item reveal">
-              <Image src={Int4} alt="dessert" fill />
-            </div>
-
+          <div className="carousel">
+            <Carousel />
           </div>
 
         </div>
