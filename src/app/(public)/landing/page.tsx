@@ -197,7 +197,6 @@ export default function HomePage() {
               Our <span>Atmosphere</span>
             </h2>
             <p>Our gallery offers a visual journey into the heart of our space — where design meets experience.
-              Every frame highlights the ambiance, textures, and moments that define who we are.
               Whether it’s the warm lighting, vibrant energy, or quiet corners,
               these glimpses bring you closer to what makes our place unique.
             </p>
