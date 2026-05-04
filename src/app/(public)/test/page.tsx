@@ -44,7 +44,7 @@ export default function HomePage() {
         </div>
 
         <div className="home-btn">
-          <button className="btn primary">Visit Us</button>
+          <a className="btn primary" href="#location">Visit Us</a>
         </div>
 
 
@@ -255,6 +255,24 @@ export default function HomePage() {
 
       </section>
 
+      <section className="location" id="location">
+        <div className="map-content">
+          <span className="map-label">LOCATION</span>
+          <h2>Visit Us</h2>
+        </div>
+        <div className="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.156154462806!2d73.81423652951185!3d18.517957927213054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb9e53a05f9%3A0x2be5e8da02be693e!2sMIT%20World%20Peace%20University%20(MIT-WPU)!5e0!3m2!1sen!2sin!4v1777889819500!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </section>
 
 
     </main >

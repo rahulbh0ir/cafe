@@ -473,6 +473,46 @@ a {
 
 
 
+/* MAP */
+
+
+.location {
+  padding: 120px 8%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.map{
+  width: 100%;
+}
+
+.map-label {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.map-content h2 {
+  font-family: var(--poiret);
+  font-size: var(--font-size-sm);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.map-content h2 span {
+  font-family: var(--poiret);
+  color: var(--brand-rose);
+}
+
+iframe {
+  width: 100%;
+  border-radius: 14px;
+  /* filter: invert(); */
+}
 
 
 
