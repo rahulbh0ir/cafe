@@ -1,6 +1,7 @@
 import "./landing.css";
 import Image from "next/image";
 import Animation from "@/components/effects/animations";
+import Carousel from "@/components/effects/carousel";
 import Bold from "@/components/ui/bold";
 import Arrow from "../../../../public/home/arrow.png";
 import Back from "../../../../public/home/backColor.jpg";
@@ -185,6 +186,28 @@ export default function HomePage() {
             <button className="btn secondary">See Menu</button>
           </Link>
         </div>
+      </section>
+
+      <section className="gallery">
+
+        <div className="gallery-container">
+
+          <div className="gallery-header">
+            <span className="gallery-label">ATMOSPHERE</span>
+
+            <h2>
+              A space made for <span>moments</span>
+            </h2>
+
+            <div className="divider"></div>
+          </div>
+
+          <div className="carousel">
+            <Carousel />
+          </div>
+
+        </div>
+
       </section>
 
     </main >
