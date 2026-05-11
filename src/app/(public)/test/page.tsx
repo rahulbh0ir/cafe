@@ -258,7 +258,7 @@ export default function HomePage() {
       <section className="location" id="location">
         <div className="map-content">
           <span className="map-label">LOCATION</span>
-          <h2>Visit Us</h2>
+          <h2>Visit <span>Us</span></h2>
         </div>
         <div className="map">
           <iframe
@@ -272,6 +272,19 @@ export default function HomePage() {
           </iframe>
         </div>
 
+      </section>
+
+      <section className="newsLetter">
+        <div className="news-heading">
+          <span className="news-label">NEWS</span>
+          <h2>All the <span>Latest Brews</span></h2>
+          <p>Sign up to our newsletter to stay up to date on the latest news, events & promos at Bean There.</p>
+        </div>
+        
+        <div className="news-action">
+          <input type="email" placeholder="Your Email"/>
+          <button className="news-btn">Submit →</button>
+        </div>
       </section>
 
 
