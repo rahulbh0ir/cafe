@@ -537,6 +537,7 @@ iframe {
   width: 100%;
   border-radius: 14px;
   /* filter: invert(); */
+  padding: 10px 0;
 }
 
 
