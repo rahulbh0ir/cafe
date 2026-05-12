@@ -584,7 +584,7 @@ iframe {
   width: 800px;
   text-align: center;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 5px 15px;
   gap: 20px;
@@ -600,14 +600,14 @@ iframe {
   font-size: large;
   border-style: none;
   color: white;
-  
+
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
-.news-btn{
+.news-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -624,7 +624,7 @@ input:focus {
 
 .news-btn:hover {
   background: var(--brand-rose);
-  color: white;
+  color: var(--text-light);
 }
 
 
