@@ -1,0 +1,110 @@
+.menu-page {
+  max-width: fit-content;
+  margin-inline: auto;
+  max-width: 2000px;
+  background-color: var(--surface-light);
+  color: var(--brand-espresso);
+}
+
+
+
+
+/* Hero */
+
+
+.menu-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-img {
+  position: relative;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.menu-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.menu-text h1 {
+  font-family: var(--poiret);
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.15rem;
+}
+
+.menu-text p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+/* Menu Section */
+
+.menu-content {
+  padding: 5rem 2rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn {
+  background: transparent;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid var(--brand-espresso);
+}
+
+.menu-btn.active {
+  background-color: var(--brand-rose-dark);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .menu-hero {
+    height: 100vh;
+  }
+
+  .menu-text h1 {
+    letter-spacing: 0.08rem;
+  }
+
+  .menu-text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  
+}
