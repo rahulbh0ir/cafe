@@ -103,7 +103,7 @@ export default function MenuPage() {
 
 
      {/* Weekly Specials        */}
-       <Weekly />     
+       {/* <Weekly />   */}
 
     </main>
   );
