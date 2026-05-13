@@ -8,12 +8,13 @@ import menuDrinks from "../../../../public/menu/menu-1.jpg";
 import menuFood from "../../../../public/menu/menu-2.jpg";
 import menuPizza from "../../../../public/menu/menu-3.jpg";
 import { menuData } from "@/data/menu";
-import { useState } from "react";
-import button from "@/components/ui/button";
+import { act, useState } from "react";
 
 export default function MenuPage() {
 
-  let [active, setActive] = useState(null)
+  let [active, setActive] = useState(1)
+
+  console.log(active)
 
   const buttons = [
     { id: 1, label: "All" },
@@ -44,19 +45,102 @@ export default function MenuPage() {
 
 
 
-      {/* MENU */}
-      <section className="menu-content">
+      {/* MENU CONTROL */}
+      <section className="menu-control">
         <div className="filter">
           {buttons.map(btn => (
             <button
               key={btn.id}
               className="menu-btn"
+              style={{
+                backgroundColor: active === btn.id ? "#954747" : "transparent",
+                color: active === btn.id ? "white" : "black",
+                transition: "0.3s"
+              }}
+              onClick={() => setActive(btn.id)}
             >{btn.label}
             </button>
           ))}
         </div>
       </section>
 
+
+
+
+      <section className="menu-items">
+
+        <div className="menu-lists"> 
+          {active === 1 || active == 2 ? (
+            <div>
+              <div className="menu-title">
+                <h2>Drinks</h2>
+              </div>
+              <div className="menu-grid">{menuData.drinks.map(item => (
+                <div key={item.id} className="grid-item">
+                  <Image 
+                    src={menuDrinks}
+                    alt="drink"
+                    width={200}
+                    height={100}
+                  />
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}</div>
+            </div>
+          ) : null}
+        </div>
+
+        <div className="menu-lists"> 
+          {active === 1 || active == 3 ? (
+            <div>
+              <div className="menu-title">
+                <h2>Foods</h2>
+              </div>
+              <div className="menu-grid">{menuData.food.map(item => (
+                <div key={item.id} className="grid-item">
+                  <Image 
+                    src={menuFood}
+                    alt="drink"
+                    width={200}
+                    height={100}
+                  />
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}</div>
+            </div>
+          ) : null}
+        </div>
+
+
+        <div className="menu-lists"> 
+          {active === 1 || active == 4 ? (
+            <div>
+              <div className="menu-title">
+                <h2>Baked</h2>
+              </div>
+              <div className="menu-grid">{menuData.pizza.map(item => (
+                <div key={item.id} className="grid-item">
+                  <Image 
+                    src={menuPizza}
+                    alt="drink"
+                    width={200}
+                    height={100}
+                  />
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}</div>
+            </div>
+          ) : null}
+        </div>
+
+         
+        
+
+
+      </section>
 
 
 
