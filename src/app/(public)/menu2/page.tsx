@@ -69,15 +69,15 @@ export default function MenuPage() {
 
       <section className="menu-items">
 
-        <div className="menu-lists"> 
-          {active === 1 || active == 2 ? (
+        {active === 1 || active == 2 ? (
+          <div className="menu-lists">
             <div>
               <div className="menu-title">
                 <h2>Drinks</h2>
               </div>
               <div className="menu-grid">{menuData.drinks.map(item => (
                 <div key={item.id} className="grid-item">
-                  <Image 
+                  <Image
                     src={menuDrinks}
                     alt="drink"
                     width={200}
@@ -88,18 +88,18 @@ export default function MenuPage() {
                 </div>
               ))}</div>
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
 
-        <div className="menu-lists"> 
-          {active === 1 || active == 3 ? (
+        {active === 1 || active == 3 ? (
+          <div className="menu-lists">
             <div>
               <div className="menu-title">
                 <h2>Foods</h2>
               </div>
               <div className="menu-grid">{menuData.food.map(item => (
                 <div key={item.id} className="grid-item">
-                  <Image 
+                  <Image
                     src={menuFood}
                     alt="drink"
                     width={200}
@@ -110,19 +110,19 @@ export default function MenuPage() {
                 </div>
               ))}</div>
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
 
 
-        <div className="menu-lists"> 
-          {active === 1 || active == 4 ? (
+        {active === 1 || active == 4 ? (
+          <div className="menu-lists">
             <div>
               <div className="menu-title">
                 <h2>Baked</h2>
               </div>
               <div className="menu-grid">{menuData.pizza.map(item => (
                 <div key={item.id} className="grid-item">
-                  <Image 
+                  <Image
                     src={menuPizza}
                     alt="drink"
                     width={200}
@@ -133,11 +133,11 @@ export default function MenuPage() {
                 </div>
               ))}</div>
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
 
-         
-        
+
+
 
 
       </section>
