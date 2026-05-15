@@ -53,7 +53,7 @@
 /* Menu Section */
 
 
-a{
+a {
   text-decoration: none;
   text-align: center;
 }
@@ -254,11 +254,24 @@ a{
 
 
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+/* MOBILE RESPONSIVE */
+
 
 @media (max-width: 768px) {
+
+  /* HERO */
+  .menu-hero {
+    height: 100vh;
+  }
+
+  .menu-text h1 {
+    letter-spacing: 0.08rem;
+  }
+
+  .menu-text p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
 
   .menu-items {
     padding: 1rem;
@@ -290,29 +303,6 @@ a{
     width: 100%;
   }
 
-  .menu-text p {
-    font-size: 1rem;
-  }
-}
 
-
-/* MOBILE RESPONSIVE */
-
-
-@media (max-width: 768px) {
-
-  /* HERO */
-  .menu-hero {
-    height: 100vh;
-  }
-
-  .menu-text h1 {
-    letter-spacing: 0.08rem;
-  }
-
-  .menu-text p {
-    font-size: 1rem;
-    padding: 0 20px;
-  }
 
 }
