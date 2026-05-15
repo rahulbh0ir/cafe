@@ -33,7 +33,7 @@ export default function MenuPage() {
           src={MainImg}
           alt="Our Menu"
           fill
-          sizes="100vw"
+          sizes="500vw"
           priority
           className="menu-img"
         />
@@ -46,18 +46,15 @@ export default function MenuPage() {
 
 
       {/* MENU CONTROL */}
+
       <section className="menu-control">
         <div className="filter">
           {buttons.map(btn => (
             <button
               key={btn.id}
-              className="menu-btn"
-              style={{
-                backgroundColor: active === btn.id ? "#954747" : "transparent",
-                color: active === btn.id ? "white" : "black",
-                transition: "0.3s"
-              }}
+              className={`menu-btn ${active === btn.id ? "active" : ""}`}
               onClick={() => setActive(btn.id)}
+              // href={`#${btn.id}`}
             >{btn.label}
             </button>
           ))}
@@ -67,90 +64,89 @@ export default function MenuPage() {
 
 
 
+      {/* MENU ITEMS */}
+
       <section className="menu-items">
 
         {active === 1 || active == 2 ? (
-          <div className="menu-lists">
-            <div>
-              <div className="menu-title">
-                <h2>Drinks</h2>
-              </div>
-              <div className="menu-grid">{menuData.drinks.map(item => (
-                <div key={item.id} className="grid-item">
-                  <Image
-                    src={menuDrinks}
-                    alt="drink"
-                    width={200}
-                    height={100}
-                  />
-                  <h3>{item.name}</h3>
-                  <p>{item.description}</p>
+          <div id="2" className="menu-lists">
+            <div className="menu-title">
+              <h2>Drinks</h2>
+            </div>
+            <div className="menu-grid">{menuData.drinks.map(item => (
+              <div key={item.id} className="grid-item">
+                <Image
+                  src={menuDrinks}
+                  alt="drink"
+                  width={500}
+                  height={500}
+                />
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <div className="item-label">
+                  <p>Calories {item.calories}</p>
+                  <p>Price {item.price}</p>
                 </div>
-              ))}</div>
+              </div>
+            ))}
             </div>
           </div>
         ) : null}
 
         {active === 1 || active == 3 ? (
-          <div className="menu-lists">
-            <div>
-              <div className="menu-title">
-                <h2>Foods</h2>
-              </div>
-              <div className="menu-grid">{menuData.food.map(item => (
-                <div key={item.id} className="grid-item">
-                  <Image
-                    src={menuFood}
-                    alt="drink"
-                    width={200}
-                    height={100}
-                  />
-                  <h3>{item.name}</h3>
-                  <p>{item.description}</p>
+          <div  id="3" className="menu-lists">
+            <div className="menu-title">
+              <h2>Foods</h2>
+            </div>
+            <div className="menu-grid">{menuData.food.map(item => (
+              <div key={item.id} className="grid-item">
+                <Image
+                  src={menuFood}
+                  alt="drink"
+                  width={500}
+                  height={500}
+                />
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <div className="item-label">
+                  <p>Calories {item.calories}</p>
+                  <p>Price {item.price}</p>
                 </div>
-              ))}</div>
+              </div>
+            ))}
             </div>
           </div>
         ) : null}
 
 
         {active === 1 || active == 4 ? (
-          <div className="menu-lists">
-            <div>
-              <div className="menu-title">
-                <h2>Baked</h2>
-              </div>
-              <div className="menu-grid">{menuData.pizza.map(item => (
-                <div key={item.id} className="grid-item">
-                  <Image
-                    src={menuPizza}
-                    alt="drink"
-                    width={200}
-                    height={100}
-                  />
-                  <h3>{item.name}</h3>
-                  <p>{item.description}</p>
+          <div  id="4" className="menu-lists">
+            <div className="menu-title">
+              <h2>Baked</h2>
+            </div>
+            <div className="menu-grid">{menuData.pizza.map(item => (
+              <div key={item.id} className="grid-item">
+                <Image
+                  src={menuPizza}
+                  alt="drink"
+                  width={500}
+                  height={500}
+                />
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <div className="item-label">
+                  <p>Calories {item.calories}</p>
+                  <p>Price {item.price}</p>
                 </div>
-              ))}</div>
+              </div>
+            ))}
             </div>
           </div>
         ) : null}
 
 
 
-
-
       </section>
-
-
-
-
-
-
-
-
-
-
 
 
 
