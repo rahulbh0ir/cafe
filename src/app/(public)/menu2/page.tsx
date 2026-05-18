@@ -4,11 +4,8 @@ import Image from "next/image";
 import "./menu2.css";
 import Animation from "../../../components/effects/animations";
 import MainImg from "../../../../public/menu/menuhero.jpg";
-import menuDrinks from "../../../../public/menu/menu-1.jpg";
-import menuFood from "../../../../public/menu/menu-2.jpg";
-import menuPizza from "../../../../public/menu/menu-3.jpg";
 import { menuData } from "@/data/menu";
-import { act, useState } from "react";
+import { useState } from "react";
 
 export default function MenuPage() {
 
