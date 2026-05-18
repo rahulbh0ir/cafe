@@ -118,6 +118,10 @@
   line-height: 1.8;
 }
 
+
+
+
+
 .story-hero::after {
   content: "";
   position: absolute;
