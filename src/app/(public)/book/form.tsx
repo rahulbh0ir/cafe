@@ -1,9 +1,6 @@
 "use client"
 
-import Image from "next/image";
 import { useState } from "react";
-
-import FormImg from "../../../../public/book/form-1.jpg";
 
 const initialData = {
   name: "",
@@ -63,14 +60,11 @@ export default () => {
 
   if (success) return (
     <div className="form-wrapper">
-      {/* <h2>Thank you</h2>
+      <h2>Thank you</h2>
       <p>You Reservation has been confirmed</p>
       <button type="submit" className="submit-btn" onClick={() => setSuccess(false)} >
         Book
-      </button> */}
-      <div className="form-image">
-        <Image src={FormImg} priority alt="" fill />
-      </div>
+      </button>
     </div>
   )
 
@@ -79,12 +73,8 @@ export default () => {
 
     <div className="form-wrapper">
       <h2>Reservation Details</h2>
-      <p className="form-intro">
-        Fill in the details below and we’ll have a table ready for you.
-      </p>
 
-
-      <form onSubmit={handleSubmit} className="book-form">
+      <form onSubmit={handleSubmit} className="form">
         <div className="form-row">
           <div className="form-field">
             <label>Name</label>
@@ -116,10 +106,15 @@ export default () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-btn" disabled={loading} >
-          {loading ? "Booking..." : "Book"}
-        </button>
-        {error ? <p>Something went wrong!</p> : null}
+        <div className="book-btn">
+          <button type="submit" className="submit-btn" disabled={loading} >
+            {loading ? "Booking..." : "Book"}
+          </button>
+        </div>
+        
+        <div className="book-status">
+          {error ? <p>Something went wrong!</p> : null}
+        </div>
       </form>
     </div>
   )

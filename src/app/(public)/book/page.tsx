@@ -38,10 +38,11 @@ export default function BookTablePage() {
           <p>
             Reserve your table at Bean There and enjoy a warm atmosphere,
             handcrafted coffee, and carefully prepared dishes made to bring
-            people together. Whether it’s a casual meetup or a special evening,
+            people together.
+          </p>
+          <p>Whether it’s a casual meetup or a special evening,
             we’re ready to make your visit memorable.
           </p>
-          <p></p>
         </div>
         <div className="book-action">
           <Form />
