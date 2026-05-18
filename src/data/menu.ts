@@ -53,7 +53,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 120,
-      img: drink1
+      img: drink1,
     },
     {
       id: "drink-2",
@@ -66,7 +66,7 @@ export const menuData: MenuData = {
       isPopular: false,
       isVeg: true,
       calories: 15,
-      img: drink2
+      img: drink2,
     },
     {
       id: "drink-3",
@@ -79,7 +79,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 25,
-      img: drink5
+      img: drink5,
     },
     {
       id: "drink-4",
@@ -92,7 +92,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 210,
-      img: drink3
+      img: drink3,
     },
     {
       id: "drink-5",
@@ -105,7 +105,7 @@ export const menuData: MenuData = {
       isPopular: false,
       isVeg: true,
       calories: 90,
-      img: drink4
+      img: drink4,
     },
 
     // {
@@ -119,6 +119,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 190,
+    //  img: drink1,
     // },
     // {
     //   id: "drink-7",
@@ -131,6 +132,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 260,
+    //  img: drink1,
     // },
     // {
     //   id: "drink-8",
@@ -143,6 +145,7 @@ export const menuData: MenuData = {
     //   isPopular: false,
     //   isVeg: true,
     //   calories: 5,
+    //  img: drink1,
 
     // },
     // {
@@ -156,6 +159,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 130,
+    //  img: drink1,
     // },
     // {
     //   id: "drink-10",
@@ -168,6 +172,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 220,
+    //  img: drink1,
     // },
   ],
 
@@ -183,7 +188,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 250,
-      img: food1
+      img: food1,
     },
     {
       id: "food-2",
@@ -196,7 +201,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 180,
-      img: food2
+      img: food2,
     },
     {
       id: "food-3",
@@ -209,7 +214,7 @@ export const menuData: MenuData = {
       isPopular: false,
       isVeg: true,
       calories: 300,
-      img: food3
+      img: food3,
     },
     {
       id: "food-4",
@@ -222,7 +227,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: false,
       calories: 280,
-      img: food4
+      img: food4,
     },
     {
       id: "food-5",
@@ -235,7 +240,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 160,
-      img: food5
+      img: food5,
     },
 
     // {
@@ -249,6 +254,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 220,
+    //  img: drink1,
     // },
     // {
     //   id: "food-7",
@@ -261,6 +267,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 320,
+    //  img: drink1,
     // },
     // {
     //   id: "food-8",
@@ -273,6 +280,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 350,
+    //  img: drink1,
     // },
     // {
     //   id: "food-9",
@@ -285,6 +293,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 290,
+    //  img: drink1,
     // },
     // {
     //   id: "food-10",
@@ -297,6 +306,7 @@ export const menuData: MenuData = {
     //   isPopular: false,
     //   isVeg: true,
     //   calories: 260,
+    //  img: drink1,
     // },
   ],
 
@@ -312,7 +322,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 500,
-      img: piz2
+      img: piz2,
     },
     {
       id: "pizza-2",
@@ -325,7 +335,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 520,
-      img: piz1
+      img: piz1,
     },
     {
       id: "pizza-3",
@@ -338,7 +348,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 650,
-      img: piz3
+      img: piz3,
     },
     {
       id: "pizza-4",
@@ -351,7 +361,7 @@ export const menuData: MenuData = {
       isPopular: false,
       isVeg: true,
       calories: 300,
-      img: piz4
+      img: piz4,
     },
     {
       id: "pizza-5",
@@ -364,7 +374,7 @@ export const menuData: MenuData = {
       isPopular: true,
       isVeg: true,
       calories: 600,
-      img: piz5
+      img: piz5,
     },
 
     // {
@@ -378,6 +388,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 640,
+    //  img: drink1,
     // },
     // {
     //   id: "pizza-7",
@@ -390,6 +401,7 @@ export const menuData: MenuData = {
     //   isPopular: false,
     //   isVeg: true,
     //   calories: 540,
+    //  img: drink1,
     // },
     // {
     //   id: "pizza-8",
@@ -402,6 +414,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 560,
+    //  img: drink1,
     // },
     // {
     //   id: "pizza-9",
@@ -414,6 +427,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 700,
+    //  img: drink1,
     // },
     // {
     //   id: "pizza-10",
@@ -426,6 +440,7 @@ export const menuData: MenuData = {
     //   isPopular: true,
     //   isVeg: true,
     //   calories: 680,
+    //  img: drink1,
     // },
   ],
 };
