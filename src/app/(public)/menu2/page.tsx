@@ -9,10 +9,8 @@ import { useState } from "react";
 
 export default function MenuPage() {
 
-  let [active, setActive] = useState(1)
-
-  console.log(active)
-
+  let [active, setActive] = useState(1);
+  
   const buttons = [
     { id: 1, label: "All" },
     { id: 2, label: "Drinks" },
