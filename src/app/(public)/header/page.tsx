@@ -15,7 +15,7 @@ interface LinkType {
 }
 
 const links: LinkType[] = [
-  { id: 1, name: "Menu", href: "/menu" },
+  { id: 1, name: "Menu", href: "/menu2" },
   { id: 3, name: "Our Story", href: "/story" },
   { id: 2, name: "Book", href: "/book" },
 ];
