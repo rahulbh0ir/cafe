@@ -30,6 +30,9 @@ export default () => {
           </div>
         </section>
 
+
+
+
         {/* SECTION 1 */}
         <section className="story-section reveal">
           <div className="story-image">
@@ -53,6 +56,9 @@ export default () => {
             </p>
           </div>
         </section>
+
+
+
 
         {/* SECTION 2 */}
         <section className="story-section reverse reveal">
@@ -78,6 +84,9 @@ export default () => {
           </div>
         </section>
 
+
+
+
         {/* SECTION 3 */}
         <section className="story-section reveal">
           <div className="story-image">
@@ -100,6 +109,10 @@ export default () => {
             </p>
           </div>
         </section>
+
+
+
+        
       </main>
     </>
   );

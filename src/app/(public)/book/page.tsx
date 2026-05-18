@@ -11,15 +11,6 @@ export default function BookTablePage() {
 
       {/* HERO */}
 
-      {/* <section className="book-hero">
-        <h1>Book a Table</h1>
-        <p>
-          Reserve your spot and enjoy slow coffee, comforting food,
-          and moments worth staying for.
-        </p>
-      </section> */}
-
-
       <section className="book-hero">
         <Image
           src={book}
@@ -38,9 +29,23 @@ export default function BookTablePage() {
 
 
 
-      {/* FORM WITH BACKGROUND */}
-      <section className="book-form-section">
-        <Form />
+      {/* FORM */}
+
+
+      <section className="book-section">
+        <div className="book-content">
+          <h2>Book Your <span>Experience</span></h2>
+          <p>
+            Reserve your table at Bean There and enjoy a warm atmosphere,
+            handcrafted coffee, and carefully prepared dishes made to bring
+            people together. Whether it’s a casual meetup or a special evening,
+            we’re ready to make your visit memorable.
+          </p>
+          <p></p>
+        </div>
+        <div className="book-action">
+          <Form />
+        </div>
       </section>
 
 
