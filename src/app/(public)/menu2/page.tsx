@@ -76,7 +76,7 @@ export default function MenuPage() {
             <div className="menu-grid">{menuData.drinks.map(item => (
               <div key={item.id} className="grid-item">
                 <Image
-                  src={menuDrinks}
+                  src={item.img}
                   alt="drink"
                   width={500}
                   height={500}
@@ -101,7 +101,7 @@ export default function MenuPage() {
             <div className="menu-grid">{menuData.food.map(item => (
               <div key={item.id} className="grid-item">
                 <Image
-                  src={menuFood}
+                  src={item.img}
                   alt="drink"
                   width={500}
                   height={500}
@@ -127,7 +127,7 @@ export default function MenuPage() {
             <div className="menu-grid">{menuData.pizza.map(item => (
               <div key={item.id} className="grid-item">
                 <Image
-                  src={menuPizza}
+                  src={item.img}
                   alt="drink"
                   width={500}
                   height={500}
