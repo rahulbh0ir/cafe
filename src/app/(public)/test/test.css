@@ -502,7 +502,6 @@ a {
 
 
 .map-section {
-  padding: 120px 8%;
   padding: var(--section-padding-desktop);
 }
 
@@ -628,7 +627,6 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 5px 15px; */
 }
 
 .news-content {
