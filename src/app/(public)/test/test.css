@@ -494,17 +494,49 @@ a {
 /* MAP */
 
 
-.location {
+.map-section {
   padding: 120px 8%;
-  width: 100%;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* background-color: #312e2e; */
-  gap: 20px;
 }
+
+.map-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.map-content {
+  width: 100%;
+}
+
+
+.map-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: 2px solid var(--brand-rose);
+  /* border-radius:40px; */
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--brand-rose-dark);
+  transition: background, color, 0.3s ease;
+}
+
+.map-btn:hover {
+  background: var(--brand-rose);
+  color: white;
+}
+
 
 .map {
   width: 100%;
@@ -516,10 +548,6 @@ a {
   color: #888;
 }
 
-.map-content {
-  width: 100%;
-  text-align: center;
-}
 
 .map-content h2 {
   font-family: var(--poiret);
@@ -535,12 +563,17 @@ a {
 
 iframe {
   width: 100%;
-  border-radius: 14px;
-  /* filter: invert(); */
+  height: 520px;
+  border-radius: 16px;
   padding: 10px 0;
+  /* filter: invert(); */
 }
 
 
+
+
+
+/* News Letter */
 
 .newsLetter {
   padding: 120px 8%;
@@ -573,7 +606,6 @@ iframe {
   font-size: var(--font-size-sm);
   line-height: 1.1;
   margin: 20px 0;
-  /* text-transform: uppercase; */
 }
 
 .news-heading h2 span {
@@ -582,7 +614,7 @@ iframe {
 }
 
 .news-action {
-  width: 800px;
+  width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -597,7 +629,6 @@ iframe {
   height: 80px;
   background: transparent;
   border-radius: 5px;
-  /* padding: 10px; */
   font-size: large;
   border-style: none;
   color: white;
@@ -682,12 +713,13 @@ input:focus {
     font-size: small;
   }
 
-  .feature-container {
+  .feature-container,
+  .map-container {
     grid-template-columns: 1fr;
-    /* text-align: center; */
   }
 
-  .feature-image img {
+  .feature-image img,
+  iframe {
     height: 420px;
   }
 
@@ -696,9 +728,27 @@ input:focus {
   }
 
   .gallery-main {
-    height: 300px;
+    height: 350px;
   }
 
+  .dots button {
+    width: 15px;
+    height: 15px;
+  }
+
+  .news-heading {
+    text-align: left;
+    font-size: small;
+  }
+
+  .news-action input {
+    height: 35px;
+  }
+
+  .news-btn {
+    padding: 8px;
+    font-size: 10px;
+  }
 
 }
 
