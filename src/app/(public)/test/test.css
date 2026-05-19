@@ -155,9 +155,13 @@ a {
 
 
 .about-section {
-  padding: 120px 8%;
-  /* background-color: #000; */
+  /* padding: 120px 8%; */
+  padding: var(--section-padding-desktop);
   background-color: #312e2e;
+}
+
+.about-content {
+  padding: 2rem;
 }
 
 
@@ -289,7 +293,8 @@ a {
 
 
 .feature-section {
-  padding: 120px 8%;
+  /* padding: 120px 8%; */
+  padding: var(--section-padding-desktop);
 }
 
 
@@ -298,6 +303,10 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+}
+
+.feature-content {
+  padding: 2rem;
 }
 
 .feature-section.reverse {
@@ -692,7 +701,8 @@ input:focus {
 
   .about-section,
   .feature-section {
-    padding: 70px 8%;
+    /* padding: 70px 8%; */
+    padding: var(--section-padding-mobile); 
   }
 
   .about-container {

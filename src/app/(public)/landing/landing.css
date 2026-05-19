@@ -444,7 +444,7 @@ a {
   .home-about,
   .info {
     grid-template-columns: 1fr;
-    padding: 3rem 0.5rem;
+    /* padding: 3rem 0.5rem; */
     padding: var(--section-padding-mobile);
     gap: 0;
   }

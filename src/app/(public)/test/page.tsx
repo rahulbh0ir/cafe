@@ -81,8 +81,8 @@ export default function HomePage() {
             <span className="about-label">OUR STORY</span>
 
             <h2>
-              Crafted with <span>passion</span><br />
-              since 2026
+              Crafted with passion<br />
+              <span>since 2026</span>
             </h2>
 
             <div className="divider"></div>
