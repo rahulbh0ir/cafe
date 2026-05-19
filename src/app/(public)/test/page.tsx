@@ -58,23 +58,6 @@ export default function HomePage() {
 
         <div className="about-container">
 
-          <div className="about-images reveal">
-
-            <Image
-              src={Back}
-              className="img-main"
-              alt="Coffee cup"
-            />
-
-            <Image
-              src={Front}
-              className="img-small"
-              alt="Coffee beans"
-            />
-
-          </div>
-
-
 
           <div className="about-content">
 
@@ -100,6 +83,22 @@ export default function HomePage() {
 
           </div>
 
+          <div className="about-images reveal">
+
+            <Image
+              src={Back}
+              className="img-main"
+              alt="Coffee cup"
+            />
+
+            <Image
+              src={Front}
+              className="img-small"
+              alt="Coffee beans"
+            />
+
+          </div>
+
         </div>
 
       </section>
@@ -108,12 +107,22 @@ export default function HomePage() {
 
 
       {/* Featured Section  */}
+      
 
       {/* Section 1 */}
 
       <section className="feature-section">
 
         <div className="feature-container">
+
+          <div className="feature-image reveal">
+
+            <Image
+              src={Coffee}
+              alt="coffee"
+            />
+
+          </div>
 
           <div className="feature-content">
             <span className="feature-label">OUR COFFEE</span>
@@ -135,14 +144,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="feature-image reveal">
 
-            <Image
-              src={Coffee}
-              alt="coffee"
-            />
-
-          </div>
 
         </div>
 
@@ -156,6 +158,14 @@ export default function HomePage() {
       <section className="feature-section reverse">
 
         <div className="feature-container">
+
+
+          <div className="feature-image reveal">
+            <Image
+              src={Food}
+              alt="food"
+            />
+          </div>
 
           <div className="feature-content">
             <span className="feature-label">OUR FOOD</span>
@@ -177,12 +187,6 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="feature-image reveal">
-            <Image
-              src={Food}
-              alt="food"
-            />
-          </div>
 
         </div>
 
@@ -196,6 +200,13 @@ export default function HomePage() {
       <section className="feature-section">
 
         <div className="feature-container">
+
+          <div className="feature-image reveal">
+            <Image
+              src={Bake}
+              alt="fresh bakery items"
+            />
+          </div>
 
           <div className="feature-content">
 
@@ -221,12 +232,7 @@ export default function HomePage() {
 
           </div>
 
-          <div className="feature-image reveal">
-            <Image
-              src={Bake}
-              alt="fresh bakery items"
-            />
-          </div>
+
 
         </div>
 
@@ -266,8 +272,8 @@ export default function HomePage() {
             <div className="divider"></div>
 
             <p>
-              Survey No, 124,<br /> 
-              Paud Rd, Rambaug Colony, <br /> 
+              Survey No, 124,<br />
+              Paud Rd, Rambaug Colony, <br />
               Kothrud, Pune, Maharashtra 411038
             </p>
 

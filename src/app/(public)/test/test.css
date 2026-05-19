@@ -254,7 +254,7 @@ a {
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  border: 2px solid var(--brand-rose);
+  border: 2px solid white;
   /* border-radius:40px; */
   font-size: 15px;
   letter-spacing: 1px;
@@ -271,13 +271,13 @@ a {
 
 /* HOVER IMAGE EFFECT */
 
-.about-images img {
+/* .about-images img {
   transition: transform 0.8s ease;
 }
 
 .about-images:hover img {
   transform: scale(1.03);
-}
+} */
 
 
 
@@ -328,6 +328,7 @@ a {
 }
 
 .feature-section.reverse .feature-btn {
+  border: 2px solid white;
   color: white;
 }
 
