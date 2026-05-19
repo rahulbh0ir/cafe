@@ -107,7 +107,7 @@ export default function HomePage() {
 
 
       {/* Featured Section  */}
-      
+
 
       {/* Section 1 */}
 
@@ -239,7 +239,7 @@ export default function HomePage() {
       </section>
 
 
-      <section className="gallery">
+      <section className="gallery-section">
 
         <div className="gallery-container">
 
@@ -260,6 +260,11 @@ export default function HomePage() {
         </div>
 
       </section>
+
+
+
+
+
 
       <section className="map-section" id="location">
         <div className="map-container">
@@ -282,7 +287,7 @@ export default function HomePage() {
               className="map-btn"
               target="_blank"
             >
-              View →
+              Locate →
             </Link>
 
           </div>
@@ -308,7 +313,7 @@ export default function HomePage() {
 
 
 
-      <section className="newsLetter">
+      <section className="news-section">
 
         <div className="news-heading">
           <span className="news-label">NEWS</span>
@@ -317,11 +322,16 @@ export default function HomePage() {
         </div>
 
         <div className="news-action">
-          <input type="email" placeholder="Your Email" />
-          <button className="news-btn">Submit →</button>
+          <div className="news-content">
+            <input type="email" placeholder="Your Email" />
+            <button className="news-btn">Submit →</button>
+          </div>
         </div>
 
       </section>
+
+
+
 
 
     </main >
