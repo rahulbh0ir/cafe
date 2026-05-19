@@ -299,22 +299,20 @@ a {
     height: 220px;
   }
 
-  .filter {
-    width: 100%;
-  }
-
-  .menu-btn {
-    /* width: 100%; */
-    width: max-content;
-    font-size: 0.6rem;
-  }
-
   .grid-item h3{
     font-size: 1.2rem;
   }
 
   .grid-item p {
     font-size: 0.8rem;
+  }
+  .filter {
+    width: 100%;
+  }
+
+  .menu-btn {
+    width: max-content;
+    font-size: 0.6rem;
   }
 
   .item-label p{
