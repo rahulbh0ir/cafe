@@ -10,11 +10,6 @@ import Front from "../../../../public/home/frontColor.jpg";
 import Coffee from "../../../../public/home/coffeeColor.jpg";
 import Food from "../../../../public/home/foodColor.jpg";
 import Bake from "../../../../public/home/bakeColor.jpg";
-import Interior from "../../../../public/home/mainInterior.jpg";
-import Int1 from "../../../../public/home/int1.jpg";
-import Int2 from "../../../../public/home/int2.jpg";
-import Int3 from "../../../../public/home/int3.jpg";
-import Int4 from "../../../../public/home/int4.jpg";
 
 
 
