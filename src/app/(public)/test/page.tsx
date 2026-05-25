@@ -71,7 +71,7 @@ export default function HomePage() {
             <div className="divider"></div>
 
             <p>
-              <Bold>Long Pour</Bold> began with a simple idea — to create a warm place where
+              <Bold>Bean There</Bold> began with a simple idea — to create a warm place where
               coffee, conversation, and comfort come together. Every cup we serve
               is brewed with care, using beans sourced from passionate growers
               around the world.

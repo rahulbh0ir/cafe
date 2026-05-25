@@ -6,7 +6,7 @@ export default () => {
     <div className="footer">
         <h3>Bean There</h3>
         <p>Good coffee. Good food. Good moments.</p>
-        <small>© {new Date().getFullYear()} Long Pour</small>
+        <small>© {new Date().getFullYear()} Bean There</small>
     </div>
   )
 }

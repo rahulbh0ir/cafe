@@ -45,7 +45,7 @@ export default () => {
           <div className="story-content">
             <h2>Where It All <span>Began</span></h2>
             <p>
-              Long Pour started as a small dream — to create a place where people
+              Bean There started as a small dream — to create a place where people
               could slow down, connect, and enjoy honest food and coffee made with
               care. What began as a single table idea soon became a shared vision.
             </p>
@@ -99,7 +99,7 @@ export default () => {
           <div className="story-content">
             <h2>More Than a <span>Café</span></h2>
             <p>
-              Long Pour is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and
+              Bean There is designed to feel inviting from the moment you walk in. Warm tones, natural elements, and
               soft lighting create a space where time seems to slow down.
             </p>
             <p>
