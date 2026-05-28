@@ -2,17 +2,22 @@ import TableCollection from "./table";
 import "./admin.css";
 
 
-export default async () =>   {
+export default async () => {
   return (
     <div className="admin-page">
-      
-    <section  className="admin-content">
-      <h1>All Reservations</h1>
-      <p>View all table bookings</p>
 
-      <TableCollection />
+      <section className="admin-feature">
+        <div className="brand"></div>
+        <div className="content"></div>
+      </section>
 
-    </section>
+      <section className="admin-content">
+        <div className="admin-navbar"></div>
+        <div className="container">
+          <TableCollection />
+        </div>
+      </section>
+
     </div>
   );
 }
