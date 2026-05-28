@@ -61,6 +61,7 @@
 }
 
 .admin-navbar h3 {
+  font-size: 1.5rem;
   padding: 10px;
 }
 
@@ -77,9 +78,7 @@
 
 
 .admin-data {
-  /* border: 1px solid grey; */
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding: 1rem;
 }
@@ -96,7 +95,7 @@
 
 .admin-table thead {
   padding: 2rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.27);
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.27); */
 }
 
 .admin-table th {

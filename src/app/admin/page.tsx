@@ -37,7 +37,7 @@ export default async () => {
       <section className="admin-content">
         <div className="admin-navbar">
 
-          <h3>Tabel Reservations</h3>
+          <h3>Dashboard</h3>
           <input type="text" placeholder="Search..." />
         </div>
         <div className="admin-data">
