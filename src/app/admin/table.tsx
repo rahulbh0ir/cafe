@@ -43,8 +43,6 @@ export default () => {
   if (loading) return <p>Loading reservations...</p>;
   if (error) return <p className="error">{error}</p>;
 
-  console.log(data)
-
   return (
     <table className="admin-table">
       <thead>
