@@ -1,76 +1,85 @@
 .admin-page {
-  background: #af8888; 
   height: 100vh;
+  margin-inline: auto;
+  max-width: 2000px;
+  background-color: var(--brand-espresso);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 } 
 
+.admin-feature {
+  border-right: 1px solid rgba(245, 245, 245, 0.187);
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.admin-brand {
+  /* border-bottom: 1px solid grey; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-controls {
+  padding: 4rem 1rem 1rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.control-item{
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
 
 
+.control-item p {
+  font-size: small;
+}
 
 .admin-content {
-  margin-left: 10%;
-  text-align: center;
-  max-width: 1200px;
-  padding: 0 1.5rem;
-  color: #1f2933;
-  font-family: system-ui, -apple-system, sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
 }
 
-.admin-content h1 {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-}
-
-.admin-content p {
-  color: white;
-  margin-bottom: 2rem;
-}
-
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #ffffff;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.admin-table thead {
-  background: #c96868; 
-}
-
-.admin-table th {
-  text-align: left;
+.admin-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 0.05em;
-  text-align: center;
+  border-bottom: 1px solid grey;
 }
 
-.admin-table td {
+.admin-navbar h3 {
+  padding: 10px;
+}
+
+.admin-navbar input{
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.799);
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+}
+
+
+
+.admin-data {
+  /* border: 1px solid grey; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  border-top: 2px solid #e5e7eb;
-  font-size: 0.95rem;
-}
-
-.admin-table tr:hover {
-  color: white;
-    background: #c96868; 
-
-  /* background: rgb(225, 156, 156);  */
-
-}
-
-.admin-loading,
-.admin-error {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.admin-error {
-  color: #b91c1c;
 }
