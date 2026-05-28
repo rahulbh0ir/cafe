@@ -6,7 +6,7 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr 5fr;
-} 
+}
 
 .admin-feature {
   border-right: 1px solid rgba(245, 245, 245, 0.187);
@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-.control-item{
+.control-item {
   width: 100%;
   height: max-content;
   padding: 1rem;
@@ -64,7 +64,7 @@
   padding: 10px;
 }
 
-.admin-navbar input{
+.admin-navbar input {
   background: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.799);
@@ -79,7 +79,47 @@
 .admin-data {
   /* border: 1px solid grey; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   padding: 1rem;
+}
+
+
+
+.admin-table {
+  width: 100%;
+  height: max-content;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+
+.admin-table thead {
+  padding: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.27);
+}
+
+.admin-table th {
+  color: var(--brand-rose);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.admin-table tr{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.27);
+}
+
+.admin-table td {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.deleteImg{
+  cursor: pointer;
 }

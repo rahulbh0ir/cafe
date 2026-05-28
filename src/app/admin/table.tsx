@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Delete from "../../../public/admin/delete(2).png"
+import Image from "next/image";
 
 type Reservation = {
   id: string;
@@ -27,7 +29,7 @@ export default () => {
           throw new Error(json.message);
         }
         setData(json.data);
-      
+
       } catch (err: any) {
         setError(err.message || "Failed to load reservations");
       } finally {
@@ -41,6 +43,7 @@ export default () => {
   if (loading) return <p>Loading reservations...</p>;
   if (error) return <p className="error">{error}</p>;
 
+  console.log(data)
 
   return (
     <table className="admin-table">
@@ -52,6 +55,7 @@ export default () => {
           <th>Date</th>
           <th>Time</th>
           <th>Booked At</th>
+          <th>Delete</th>
         </tr>
       </thead>
 
@@ -64,6 +68,15 @@ export default () => {
             <td>{item.date}</td>
             <td>{item.time}</td>
             <td>{new Date(item.createdAt).toLocaleString()}</td>
+            <td>
+              <Image
+                className="deleteImg"
+                src={Delete}
+                alt="delete entry"
+                width={20}
+                height={20}
+              />
+            </td>
           </tr>
         ))}
       </tbody>
