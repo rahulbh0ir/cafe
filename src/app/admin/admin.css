@@ -50,6 +50,7 @@
 .admin-content {
   display: grid;
   grid-template-rows: 1fr 5fr;
+  overflow-y: scroll;
 }
 
 .admin-navbar {

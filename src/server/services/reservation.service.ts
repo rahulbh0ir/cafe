@@ -33,9 +33,13 @@ export const reservationService =  {
   async getAllReservations() {
     const list = await reservationRepository.reservations()
     return list
-  } 
+  }, 
 
 
+  async deleteReservation(id : string) {
+    const deletedId =  await reservationRepository.delete(id);
+    return deletedId
+  }
   
 
 };  

@@ -8,11 +8,18 @@ export interface Data {
   time : string
 }
 
+
 export const reservationRepository = {
 
   create(data : Data) {
     return prisma.reservation.create({
       data,
+    });
+  },
+
+  delete(id : string) {
+    return prisma.reservation.delete({
+      where: { id }
     });
   },
 

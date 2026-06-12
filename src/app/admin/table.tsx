@@ -43,6 +43,38 @@ export default () => {
   if (loading) return <p>Loading reservations...</p>;
   if (error) return <p className="error">{error}</p>;
 
+
+
+  // Delete a reservation 
+
+  const deleteItem = async (id: string) => {
+    console.log(id)
+    try {
+
+      const response = await fetch("/api/reservation", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(id)
+      })
+
+      const deletedItem = await response.json()
+      const res = await fetch("/api/admin/reservation");
+      const json = await res.json();
+      setData(json.data);
+
+
+
+      if (!response.ok) {
+        throw new Error(deletedItem.message)
+      }
+
+    }
+    catch (error) {
+      console.log("Error", error)
+    }
+  }
+
+
   return (
     <table className="admin-table">
       <thead>
@@ -73,6 +105,7 @@ export default () => {
                 alt="delete entry"
                 width={20}
                 height={20}
+                onClick={() => deleteItem(item.id)}
               />
             </td>
           </tr>
